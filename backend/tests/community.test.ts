@@ -202,6 +202,8 @@ describe.skipIf(process.env.RUN_DB_TESTS !== "1")(
       ).toBe(204);
     });
     it("ingredient/time/difficulty filters and stable sorts work", async () => {
+      const injection=await request(app).get('/api/v1/recipes').query({q:"' OR 1=1 --"});
+      expect(injection.status).toBe(200);expect(injection.body.pagination.total).toBe(0);
       const [i] = await pool.query<any[]>(
         "SELECT name FROM ingredients WHERE id=?",
         [ingredient],

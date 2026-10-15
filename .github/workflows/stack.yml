@@ -40,7 +40,9 @@ jobs:
           JS
       - name: Collect service logs
         if: always()
-        run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml logs --no-color > stack.log
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.monitoring.yml --profile tools ps -a > stack.log
+          docker compose -f docker-compose.yml -f docker-compose.monitoring.yml --profile tools logs --no-color >> stack.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:

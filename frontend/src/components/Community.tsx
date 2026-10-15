@@ -63,6 +63,7 @@ export function Community({
       return;
     }
     setBusy(true);
+    setError('');
     try {
       await api(`/recipes/${recipeId}/rating`, {
         method: "PUT",
@@ -84,6 +85,7 @@ export function Community({
       return;
     }
     setBusy(true);
+    setError('');
     try {
       await api(`/recipes/${recipeId}/comments`, {
         method: "POST",
@@ -139,12 +141,13 @@ export function Community({
               : "Đăng nhập để chia sẻ cảm nhận…"
           }
           rows={3}
-          required
+          required={!!user}
+          disabled={!user}
           maxLength={2000}
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button className="dark-button" disabled={busy}>
+        <button type={user?'submit':'button'} onClick={user?undefined:login} className="dark-button" disabled={busy}>
           <MessageCircle size={15} />
           {user ? "Gửi bình luận" : "Đăng nhập để bình luận"}
         </button>

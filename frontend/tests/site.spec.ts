@@ -73,6 +73,10 @@ test("public website, filters and desktop/tablet/mobile layouts", async ({
   await expect(page.locator(".ingredient-list button").first()).toBeVisible();
   await page.locator(".ingredient-list button").first().click();
   await expect(page.locator(".ingredient-list .checked")).toHaveCount(1);
+  await page.getByRole('button',{name:'Đăng nhập để bình luận',exact:true}).click();
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('dialog')).toHaveCount(0);
   await page.screenshot({
     path: "test-results/recipe-desktop.png",
     fullPage: true,
@@ -156,11 +160,12 @@ test("account, profile, upload, create-preview-edit-delete, favorite, rating and
   await expect(page.locator(".detail-rating")).toContainText("5.0");
   await page
     .getByRole("textbox", { name: "Bình luận của bạn" })
-    .fill("Món này nấu rất dễ.");
+    .fill('<img src=x onerror="window.cookshareXss=true">');
   await page
     .getByRole("button", { name: "Gửi bình luận", exact: true })
     .click();
-  await expect(page.locator(".comment>p")).toHaveText("Món này nấu rất dễ.");
+  await expect(page.locator(".comment>p")).toHaveText('<img src=x onerror="window.cookshareXss=true">');
+  await expect(page.locator('.comment>p img')).toHaveCount(0);
   await page
     .locator(".comment-actions")
     .getByRole("button", { name: "Sửa", exact: true })

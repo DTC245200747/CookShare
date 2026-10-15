@@ -6,7 +6,7 @@ services:
     volumes:
       - ./monitoring/prometheus:/etc/prometheus:ro
       - prometheus_data:/prometheus
-    networks: [monitoring]
+    networks: [monitoring,management]
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
   grafana:
@@ -24,7 +24,7 @@ services:
       - grafana_data:/var/lib/grafana
       - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
       - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
-    networks: [monitoring]
+    networks: [monitoring,management]
     depends_on: [prometheus,loki]
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
@@ -35,7 +35,7 @@ services:
     volumes:
       - ./monitoring/loki/loki.yml:/etc/loki/loki.yml:ro
       - loki_data:/loki
-    networks: [monitoring]
+    networks: [monitoring,management]
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
   docker-socket-proxy:
@@ -43,6 +43,7 @@ services:
     environment:
       CONTAINERS: '1'
       INFO: '1'
+      NETWORKS: '1'
       POST: '0'
     volumes: ['/var/run/docker.sock:/var/run/docker.sock:ro']
     networks: [docker_observer]
