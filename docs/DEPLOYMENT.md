@@ -70,7 +70,7 @@ sum by(status)(count_over_time({job="cookshare",service="api"} | json [5m]))
 {job="cookshare",service="nginx"} |= "GET /api/"
 ```
 
-Prometheus/Loki giữ dữ liệu 7 ngày, volume riêng. Loki không có auth trong mạng nội bộ và không được expose ra Internet. cAdvisor cần quyền đọc filesystem/cgroup/socket của Docker host; trên Docker Desktop/cgroup layout khác Linux có thể cần điều chỉnh mount. Nó chỉ phục vụ network monitoring, không mở cổng host. Chưa xác minh cAdvisor trên máy này do không có Docker daemon.
+Prometheus/Loki giữ dữ liệu 7 ngày, volume riêng. Loki không có auth trong mạng nội bộ và không được expose ra Internet. cAdvisor cần quyền đọc filesystem/cgroup/socket của Docker host; trên Docker Desktop/cgroup layout khác Linux có thể cần điều chỉnh mount. Nó chỉ phục vụ network monitoring, không mở cổng host. Samples container đã xác minh trên Linux CI; Docker Desktop Windows chưa được kiểm chứng. Alloy chạy UID 473 đúng owner của volume; socket proxy cho GET container/network metadata nhưng chặn POST. Các trang quản trị có management bridge và vẫn chỉ publish cổng loopback.
 
 ## Bảo mật và dữ liệu
 
@@ -84,4 +84,4 @@ Prometheus/Loki giữ dữ liệu 7 ngày, volume riêng. Loki không có auth t
 
 Backup database bằng công cụ quản trị MySQL; backup cả volume uploads. `docker compose down` giữ volume. Không dùng `down -v` cho dữ liệu cần giữ. Các ảnh upload chưa được gắn vào profile/recipe vẫn còn trên ổ đĩa; production cần định kỳ dọn file mồ côi sau khi đối chiếu dữ liệu và có backup.
 
-Tham khảo cấu hình chính thức: [Prometheus](https://prometheus.io/docs/prometheus/latest/configuration/configuration/), [Loki](https://grafana.com/docs/loki/latest/configure/examples/configuration-examples/), [Alloy Docker logs](https://grafana.com/docs/alloy/latest/reference/components/loki/loki.source.docker/). Version image được tra theo releases chính thức ngày 15/10/2026; pull/build thực tế vẫn cần Docker để xác nhận.
+Tham khảo cấu hình chính thức: [Prometheus](https://prometheus.io/docs/prometheus/latest/configuration/configuration/), [Loki](https://grafana.com/docs/loki/latest/configure/examples/configuration-examples/), [Alloy Docker logs](https://grafana.com/docs/alloy/latest/reference/components/loki/loki.source.docker/). Version image tra theo releases chính thức ngày 15/10/2026; pull/build/runtime đã pass trong [Linux CI](CI_EVIDENCE.md). Nếu đang chạy bản portable local ở cổng 3001/9090/3100, dừng các bản đó trước khi khởi động Docker để tránh trùng cổng.

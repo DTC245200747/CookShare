@@ -7,7 +7,7 @@ Ngày **15/10/2026**, Windows, Node.js 22.16.0, MySQL Community 8.0.46, Chrome t
 - `npm run build`: pass.
 - Hai migrations áp dụng thành công; chạy lại không tạo thêm lịch sử.
 - Seed 21 công thức tiếng Việt, 6 categories; seed lặp thành công, không reset password cũ.
-- **21/21 tests pass, 2 files, không skip**, Vitest 5.0.4. Lượt cuối sau tách config DB khỏi JWT và thay cách truyền secrets Compose: **9.74 giây**, bắt đầu 17:31:21 giờ Việt Nam.
+- **26/26 tests pass, 3 files, không skip**, Vitest 5.0.4. Lượt QA bổ sung JWT expired/audience, UTF-8 password, rate limit, payload và SQL injection: **9.88 giây**, bắt đầu 19:01:20 giờ Việt Nam.
 - Tests dùng HTTP Supertest và MySQL thật; không mock DB/repository.
 - Kiểm tra auth đúng/sai, email trùng, role/owner, validation, FK/cascade, transaction rollback, search/filter/pagination, profile, favorites/rating/comment, upload giả/SVG/quá lớn/thật, moderation, user active, password/logout revoke và metrics.
 - `npm audit --omit=dev` backend sau bổ sung dependencies: **0 vulnerabilities**. Khi cài frontend/Playwright và backend deps, npm audit cũng báo 0; không thay thế kiểm toán image Docker.
@@ -15,7 +15,7 @@ Ngày **15/10/2026**, Windows, Node.js 22.16.0, MySQL Community 8.0.46, Chrome t
 ## Website và trình duyệt
 
 - React TypeScript + Vite build pass. Bản build cuối: CSS ~31.22 kB, JS ~289.62 kB trước gzip.
-- **4/4 Playwright tests pass**, Chrome: 3 kịch bản website + 1 Grafana, tổng **35.8 giây**.
+- **4/4 Playwright tests pass**, Chrome: 3 kịch bản website + 1 Grafana, lượt QA cuối **37.8 giây**. Có hồi quy nút login comment cho khách và XSS được render thành text, không thành thẻ img thực thi.
 - Kịch bản public: trang chủ, ảnh thật, tên/nguyên liệu/thời gian/độ khó, pagination, chi tiết và checkbox nguyên liệu.
 - Kịch bản tài khoản: sai login → đăng ký → login → sửa hồ sơ/upload avatar → tạo recipe/upload ảnh → preview → đăng → favorite → rate → comment thêm/sửa/xóa → sửa recipe → xóa → logout.
 - Kịch bản admin: dashboard SQL, category CRUD, tìm kiếm, moderation, bảng users; member/admin separation kiểm tra thêm ở backend.
@@ -39,9 +39,9 @@ Vì Docker daemon chưa hoạt động, đã tải bản portable chính thức 
 
 - `docker compose -f docker-compose.yml -f docker-compose.monitoring.yml --env-file .env.example config --quiet`: **pass** sau cập nhật frontend container, seed service và tách secrets.
 - Bash syntax `database/init/20-users.sh`: pass.
-- Docker CLI 29.7.2 có sẵn nhưng daemon không hoạt động. Chưa build/run Dockerfiles, Nginx/phpMyAdmin/cAdvisor, bootstrap tài khoản DB production, hoặc pipeline Docker socket → Alloy.
+- Docker CLI 29.7.2 local có sẵn nhưng daemon không hoạt động. **Đã build/run toàn bộ Docker stack trên Linux GitHub Actions**, gồm MySQL bootstrap/migration/seed, API, frontend Nginx, phpMyAdmin, exporters, Prometheus/Grafana/Loki/Alloy. Chưa chạy Docker Desktop trên Windows này.
 - Chưa có samples CPU/memory container trong bản portable; dashboard có panel nhưng không coi là đã xác minh thu thập container.
-- GitHub Actions đã có backend/browser và stack smoke workflows; chưa có bằng chứng chúng đã chạy trên GitHub tại thời điểm viết báo cáo.
+- **Hai workflow cùng SUCCESS** trên commit `c9b0b41`: [backend/browser](https://github.com/DTC245200747/CookShare/actions/runs/38732070508), [Docker stack](https://github.com/DTC245200747/CookShare/actions/runs/38732070475). Có samples container thật, log Docker trong Loki, datasource/dashboard health OK và runtime hardening pass. Trích log: [CI_EVIDENCE](CI_EVIDENCE.md).
 - Chưa triển khai public HTTPS. Báo cáo PDF cần điền thông tin sinh viên; không tự suy đoán tên/MSSV.
 
 ## Tái kiểm tra

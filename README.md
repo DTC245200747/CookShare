@@ -114,6 +114,8 @@ Trên máy có Chrome có thể dùng `$env:E2E_CHROME='1'` thay cài Chromium. 
 
 Kết quả đã thực chạy và giới hạn: [verification](docs/verification.md). Trạng thái từng nhóm chức năng: [FEATURE_CHECKLIST](docs/FEATURE_CHECKLIST.md). Hướng dẫn endpoint: [API](docs/api.md).
 
+**Kiểm toán QA:** [bảng đánh giá 46 chức năng](docs/QA_AUDIT.md), [minh chứng CI thành công](docs/CI_EVIDENCE.md). Lượt QA đạt 26 tests backend và 4 browser tests. Docker stack đã chạy thành công trên Linux GitHub Actions; Docker Desktop Windows chưa chạy.
+
 Báo cáo kỹ thuật: [PDF 10 trang](docs/CookShare-report.pdf), [nguồn HTML để điền trang bìa](docs/report.html). Điền họ tên/MSSV/lớp trước khi nộp; `node scripts/export-report.mjs` xuất lại PDF.
 
 ## Cấu trúc

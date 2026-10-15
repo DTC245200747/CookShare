@@ -28,17 +28,17 @@ Kiểm tra ngày **15/10/2026**. DONE = triển khai và kiểm thử đạt; PA
 | UI trắng kem/cam/xanh lá, responsive | DONE | Chrome 1440/820/390px, ảnh tải thành công, không tràn ngang |
 | Skeleton/toast/empty/error/confirm/form validation | DONE | Các luồng browser chạy thật, không success giả |
 | Backend/React production build | DONE | tsc + Vite build pass |
-| Git source, ignore secrets/artifacts, CI workflows | PARTIAL | Source/workflows đã chuẩn bị; xem Git log/verification cho trạng thái đồng bộ remote và CI |
-| Docker Compose và Dockerfiles | PARTIAL | Compose config pass; chưa build/run image trên máy này |
-| Nginx reverse proxy và frontend static | PARTIAL | Có cấu hình và Dockerfile; chưa kiểm thử Nginx container thực tế |
-| phpMyAdmin | NOT VERIFIED | Có profile tools, chưa chạy container |
+| Git source, ignore secrets/artifacts, CI workflows | DONE | Đã push main; backend/browser và Docker workflows SUCCESS, xem CI_EVIDENCE.md |
+| Docker Compose và Dockerfiles | DONE | Linux CI build/start/seed thật; Windows local daemon chưa chạy |
+| Nginx reverse proxy và frontend static | DONE | Docker CI HTTP/DB ready, security headers và /metrics404 |
+| phpMyAdmin | PARTIAL | Docker CI HTTP200; chưa thao tác login/query trên GUI |
 | Prometheus API và MySQL metrics | DONE | Portable thực chạy: up API/MySQL=1, mysql_up=1, có HTTP/DB samples |
 | Grafana datasource/dashboard 11 panel | DONE | Portable, datasource health OK; browser screenshot/dashboard API pass |
 | Loki + Alloy thu log và ≥3 LogQL | DONE | Portable file tail → Loki, 3 query trả success/log thật |
-| Docker log discovery qua socket proxy | NOT VERIFIED | Alloy validate pass; cần Docker để xác minh luồng container |
-| cAdvisor CPU/memory container | NOT VERIFIED | Có scrape/dashboard; máy chưa có Docker daemon chạy |
-| Hardening runtime toàn bộ Docker | PARTIAL | Code/config tách DB users, non-root, networks, cap drops, read-only; cần runtime Docker để xác minh |
+| Docker log discovery qua socket proxy | DONE | Linux CI có log API thật vào Loki sau sửa UID/network metadata |
+| cAdvisor CPU/memory container | DONE | Target UP, samples memory có nhãn Compose CookShare trong CI; chưa xác minh trên Windows |
+| Hardening runtime cơ bản Docker | DONE | CI chứng minh API non-root, runtime DDL denied, upload writable, không có root/migration/seed secrets |
 | HTTPS public | NOT VERIFIED | Không cấp chứng chỉ hoặc deploy Internet; có security headers theo đề |
 | Báo cáo 10 trang và minh chứng | PARTIAL | PDF đúng 10 trang, không tràn, ảnh thật; cần điền tên/MSSV/lớp trước khi nộp |
 
-Không có lỗi test tồn đọng tại thời điểm ghi nhận. Không coi cấu hình hoặc workflow chưa chạy là runtime DONE. Hướng dẫn kiểm tra phần Docker còn thiếu: `docs/DEPLOYMENT.md` và `scripts/verify-stack.mjs`.
+QA bổ sung: **26/26 backend tests**, **4/4 browser tests**, sửa nút guest comment và kiểm tra XSS/rate/JWT/injection. Bảng đánh giá đầy đủ 46 mục: [QA_AUDIT](QA_AUDIT.md). Minh chứng Docker/Linux CI: [CI_EVIDENCE](CI_EVIDENCE.md). Không coi kết quả Linux là đã chạy Docker Desktop Windows.
