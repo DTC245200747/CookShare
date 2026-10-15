@@ -19,6 +19,7 @@ services:
       GF_AUTH_ANONYMOUS_ENABLED: 'false'
       GF_ANALYTICS_REPORTING_ENABLED: 'false'
       GF_ANALYTICS_CHECK_FOR_UPDATES: 'false'
+      GF_PLUGINS_PREINSTALL_DISABLED: 'true'
     volumes:
       - grafana_data:/var/lib/grafana
       - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
@@ -48,6 +49,7 @@ services:
     security_opt: [no-new-privileges:true]
   alloy:
     image: grafana/alloy:v1.20.1
+    user: '473:473'
     command: [run, --storage.path=/var/lib/alloy/data, /etc/alloy/config.alloy]
     volumes:
       - ./monitoring/alloy/config.alloy:/etc/alloy/config.alloy:ro

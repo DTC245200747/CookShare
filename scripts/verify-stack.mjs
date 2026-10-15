@@ -5,10 +5,11 @@ const grafana=process.env.GRAFANA_URL||'http://localhost:3001';
 const loki=process.env.LOKI_URL||'http://localhost:3100';
 async function fetchOk(url,options){const response=await fetch(url,options);if(!response.ok)throw Error(`${url}: HTTP ${response.status}`);return response;}
 async function waitFor(name,check){let last;for(let i=0;i<30;i++){try{await check();console.log(`PASS ${name}`);return;}catch(e){last=e;await new Promise(resolve=>setTimeout(resolve,2000));}}throw last;}
-await waitFor('web and MySQL',async()=>{const html=await (await fetchOk(web)).text();if(!html.includes('CookShare'))throw Error('Frontend not served');const ready=await (await fetchOk(web+'/health/ready')).json();if(ready.status!=='ready')throw Error('DB unavailable');});
+await waitFor('web and MySQL',async()=>{const response=await fetchOk(web);const html=await response.text();if(!html.includes('CookShare'))throw Error('Frontend not served');if(response.headers.get('x-frame-options')!=='DENY')throw Error('Missing Nginx security headers');const ready=await (await fetchOk(web+'/health/ready')).json();if(ready.status!=='ready')throw Error('DB unavailable');});
+await waitFor('phpMyAdmin',async()=>{const html=await(await fetchOk('http://localhost:8081')).text();if(!html.toLowerCase().includes('phpmyadmin'))throw Error('phpMyAdmin page not served');});
 for(let i=0;i<10;i++)await fetchOk(web+'/api/v1/recipes?limit=1');
 await waitFor('Prometheus targets',async()=>{const targets=await (await fetchOk(prometheus+'/api/v1/targets')).json();for(const job of ['cookshare-api','mysql','containers']){if(!targets.data.activeTargets.some(t=>t.labels.job===job&&t.health==='up'))throw Error(`Target down: ${job}`);}});
-for(const query of ['cookshare_http_requests_total','mysql_up','container_memory_working_set_bytes'])await waitFor(query,async()=>{const r=await(await fetchOk(prometheus+'/api/v1/query?query='+encodeURIComponent(query))).json();if(!r.data.result.length)throw Error('No samples: '+query);});
+for(const query of ['cookshare_http_requests_total','mysql_up','container_memory_working_set_bytes{container_label_com_docker_compose_project="cookshare"}'])await waitFor(query,async()=>{const r=await(await fetchOk(prometheus+'/api/v1/query?query='+encodeURIComponent(query))).json();if(!r.data.result.length)throw Error('No samples: '+query);if(query==='mysql_up'&&r.data.result[0].value[1]!=='1')throw Error('MySQL exporter cannot connect');});
 await waitFor('Grafana',()=>fetchOk(grafana+'/api/health'));
 if(!process.env.GRAFANA_ADMIN_PASSWORD)throw Error('Set GRAFANA_ADMIN_PASSWORD to verify provisioned dashboard and data sources');
 const headers={Authorization:'Basic '+Buffer.from('admin:'+process.env.GRAFANA_ADMIN_PASSWORD).toString('base64')};

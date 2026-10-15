@@ -6,6 +6,7 @@ jobs:
     timeout-minutes: 20
     env:
       GRAFANA_ADMIN_PASSWORD: ci-grafana-password
+      SEED_ADMIN_PASSWORD: ci-seed-password
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -15,16 +16,28 @@ jobs:
         run: |
           cp .env.example .env
           sed -i 's/^GRAFANA_ADMIN_PASSWORD=.*/GRAFANA_ADMIN_PASSWORD=ci-grafana-password/' .env
+          sed -i 's/^SEED_ADMIN_PASSWORD=.*/SEED_ADMIN_PASSWORD=ci-seed-password/' .env
       - name: Build and start stack
         run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml --profile tools up -d --build
       - name: Seed database
-        run: docker compose run --rm seed
+        run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml --profile tools run --rm seed
       - name: Validate monitoring configuration
         run: |
           docker compose -f docker-compose.yml -f docker-compose.monitoring.yml exec -T prometheus promtool check config /etc/prometheus/prometheus.yml
           docker compose -f docker-compose.yml -f docker-compose.monitoring.yml exec -T alloy alloy validate /etc/alloy/config.alloy
       - name: Verify frontend, database, metrics, dashboard and log ingestion
         run: node scripts/verify-stack.mjs
+      - name: Verify runtime hardening
+        run: |
+          docker compose exec -T api node --input-type=module <<'JS'
+          import {pool} from './dist/config/db.js';
+          import {writeFile,unlink} from 'node:fs/promises';
+          if(process.getuid()===0)throw Error('API runs as root');
+          for(const name of ['MYSQL_ROOT_PASSWORD','DB_MIGRATION_PASSWORD','SEED_ADMIN_PASSWORD'])if(process.env[name])throw Error('Unneeded secret exposed: '+name);
+          try{await pool.query('CREATE TABLE runtime_privilege_probe(id INT)');throw Error('Runtime can create tables');}catch(e){if(e.code!=='ER_TABLEACCESS_DENIED_ERROR')throw e;}finally{await pool.end();}
+          await writeFile('uploads/permission-probe.tmp','ok');await unlink('uploads/permission-probe.tmp');
+          console.log('Runtime user is non-root, DDL denied, uploads writable, unnecessary secrets absent.');
+          JS
       - name: Collect service logs
         if: always()
         run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml logs --no-color > stack.log
@@ -35,4 +48,4 @@ jobs:
           path: stack.log
       - name: Stop disposable stack
         if: always()
-        run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml down -v
+        run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml --profile tools down -v
