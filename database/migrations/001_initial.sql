@@ -1,0 +1,55 @@
+CREATE TABLE IF NOT EXISTS users (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100) NOT NULL,
+ email VARCHAR(254) NOT NULL UNIQUE,
+ password_hash VARCHAR(255) NOT NULL,
+ role ENUM('member','admin') NOT NULL DEFAULT 'member',
+ created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS categories (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100) NOT NULL UNIQUE,
+ description TEXT NULL
+);
+CREATE TABLE IF NOT EXISTS ingredients (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100) NOT NULL UNIQUE,
+ description TEXT NULL
+);
+CREATE TABLE IF NOT EXISTS recipes (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ author_id INT UNSIGNED NOT NULL,
+ category_id INT UNSIGNED NOT NULL,
+ title VARCHAR(200) NOT NULL,
+ description TEXT NOT NULL,
+ image_url VARCHAR(2048) NULL,
+ prep_minutes INT UNSIGNED NOT NULL,
+ cook_minutes INT UNSIGNED NOT NULL,
+ servings INT UNSIGNED NOT NULL,
+ difficulty ENUM('easy','medium','hard') NOT NULL DEFAULT 'easy',
+ created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ FOREIGN KEY (author_id) REFERENCES users(id) ON DELETE RESTRICT,
+ FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE RESTRICT,
+ INDEX idx_recipes_category_created(category_id,created_at),
+ INDEX idx_recipes_author(author_id),
+ CHECK (servings > 0)
+);
+CREATE TABLE IF NOT EXISTS recipe_ingredients (
+ recipe_id INT UNSIGNED NOT NULL,
+ ingredient_id INT UNSIGNED NOT NULL,
+ quantity DECIMAL(10,3) NOT NULL,
+ unit VARCHAR(30) NOT NULL,
+ PRIMARY KEY(recipe_id,ingredient_id),
+ FOREIGN KEY(recipe_id) REFERENCES recipes(id) ON DELETE CASCADE,
+ FOREIGN KEY(ingredient_id) REFERENCES ingredients(id) ON DELETE RESTRICT,
+ CHECK(quantity > 0)
+);
+CREATE TABLE IF NOT EXISTS recipe_steps (
+ recipe_id INT UNSIGNED NOT NULL,
+ position INT UNSIGNED NOT NULL,
+ instruction TEXT NOT NULL,
+ PRIMARY KEY(recipe_id,position),
+ FOREIGN KEY(recipe_id) REFERENCES recipes(id) ON DELETE CASCADE,
+ CHECK(position > 0)
+);

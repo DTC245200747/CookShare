@@ -1,0 +1,1 @@
+Seed chạy bằng `cd backend && npm run db:seed`, sử dụng bcrypt và transaction trong `backend/src/config/seed.ts`. Phải đặt SEED_ADMIN_PASSWORD. Chạy lại không nhân đôi dữ liệu mẫu, không đổi mật khẩu tài khoản cũ.

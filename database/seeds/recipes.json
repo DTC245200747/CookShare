@@ -1,0 +1,385 @@
+[
+  {
+    "title": "Salad rau xanh sốt chanh",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Xà lách", 200, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Dưa leo", 1, "quả"],
+      ["Chanh", 1, "quả"],
+      ["Dầu ô liu", 15, "ml"]
+    ],
+    "steps": [
+      "Rửa sạch xà lách, cà chua và dưa leo. Để ráo, cắt miếng vừa ăn.",
+      "Vắt chanh lấy nước, trộn với dầu ô liu và một chút muối.",
+      "Cho rau vào tô lớn, rưới sốt, đảo nhẹ và dùng ngay."
+    ]
+  },
+  {
+    "title": "Mì Ý sốt cà chua húng quế",
+    "category": "Món chính",
+    "image": "pasta",
+    "prep": 10,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mì Ý", 300, "g"],
+      ["Cà chua", 4, "quả"],
+      ["Tỏi", 3, "tép"],
+      ["Húng quế", 10, "g"],
+      ["Dầu ô liu", 20, "ml"]
+    ],
+    "steps": [
+      "Luộc mì trong nước sôi có muối theo thời gian ghi trên bao bì, giữ lại một ít nước luộc.",
+      "Phi tỏi với dầu ô liu, thêm cà chua cắt nhỏ, nấu nhỏ lửa 15 phút.",
+      "Cho mì và một ít nước luộc vào sốt, đảo đều, thêm húng quế rồi tắt bếp."
+    ]
+  },
+  {
+    "title": "Gà nướng thảo mộc",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 25,
+    "cook": 40,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Thịt gà", 800, "g"],
+      ["Tỏi", 4, "tép"],
+      ["Chanh", 1, "quả"],
+      ["Dầu ô liu", 20, "ml"],
+      ["Hương thảo", 5, "g"]
+    ],
+    "steps": [
+      "Thấm khô thịt gà, ướp tỏi băm, dầu ô liu, hương thảo và nước chanh trong 20 phút.",
+      "Làm nóng lò ở 200°C, xếp gà lên khay có lót giấy nướng.",
+      "Nướng 35–40 phút đến khi thịt chín kỹ, nhiệt độ phần dày nhất đạt 74°C.",
+      "Để nghỉ 5 phút trước khi cắt và thưởng thức."
+    ]
+  },
+  {
+    "title": "Salad cà chua dưa leo",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 12,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cà chua", 3, "quả"],
+      ["Dưa leo", 2, "quả"],
+      ["Hành tây", 0.5, "củ"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Rửa và cắt cà chua, dưa leo thành miếng nhỏ.",
+      "Thái hành thật mỏng, ngâm nước lạnh 5 phút rồi vớt ráo.",
+      "Trộn rau với nước chanh và gia vị vừa ăn. Để mát 5 phút rồi dùng."
+    ]
+  },
+  {
+    "title": "Sữa chua trái cây mùa hè",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Sữa chua", 400, "g"],
+      ["Dâu tây", 150, "g"],
+      ["Chuối", 2, "quả"],
+      ["Mật ong", 20, "ml"]
+    ],
+    "steps": [
+      "Rửa dâu, bỏ cuống, cắt nhỏ. Lột vỏ chuối và cắt lát.",
+      "Chia sữa chua vào ly, xếp trái cây lên trên.",
+      "Rưới mật ong, giữ lạnh đến khi dùng."
+    ]
+  },
+  {
+    "title": "Bò áp chảo sốt tiêu",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 15,
+    "cook": 15,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Thịt bò", 500, "g"],
+      ["Tiêu đen", 5, "g"],
+      ["Bơ", 20, "g"],
+      ["Tỏi", 3, "tép"]
+    ],
+    "steps": [
+      "Thấm khô thịt bò, ướp với tiêu và muối khoảng 10 phút.",
+      "Làm nóng chảo, thêm bơ và tỏi rồi áp chảo hai mặt thịt.",
+      "Hạ lửa và nấu đến độ chín mong muốn, để thịt nghỉ trước khi cắt."
+    ]
+  },
+  {
+    "title": "Mì Ý tỏi dầu ô liu",
+    "category": "Món chính",
+    "image": "pasta",
+    "prep": 10,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mì Ý", 250, "g"],
+      ["Tỏi", 5, "tép"],
+      ["Dầu ô liu", 40, "ml"],
+      ["Húng quế", 10, "g"]
+    ],
+    "steps": [
+      "Luộc mì theo hướng dẫn, giữ lại 100 ml nước luộc.",
+      "Thái tỏi mỏng, làm nóng dầu và phi tỏi ở lửa nhỏ cho vàng nhạt.",
+      "Thêm mì và nước luộc, đảo đều 2 phút, rắc húng quế."
+    ]
+  },
+  {
+    "title": "Gà xào rau củ sắc màu",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt gà", 400, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Ớt chuông", 2, "quả"],
+      ["Hành tây", 1, "củ"]
+    ],
+    "steps": [
+      "Thái gà thành miếng mỏng, ướp muối tiêu. Thái rau củ vừa ăn.",
+      "Xào gà trên chảo nóng cho chín, để riêng.",
+      "Xào rau củ 4–5 phút, cho gà trở lại, nêm vừa ăn và đảo đều."
+    ]
+  },
+  {
+    "title": "Taco gà rau xanh",
+    "category": "Món chính",
+    "image": "tacos",
+    "prep": 20,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt gà", 400, "g"],
+      ["Bánh tortilla", 8, "cái"],
+      ["Xà lách", 100, "g"],
+      ["Cà chua", 2, "quả"]
+    ],
+    "steps": [
+      "Ướp gà với muối và tiêu, áp chảo đến khi chín kỹ.",
+      "Rửa rau và thái cà chua, cắt gà thành sợi.",
+      "Làm nóng tortilla rồi xếp gà và rau vào, gập đôi và dùng."
+    ]
+  },
+  {
+    "title": "Salad ức gà nướng",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Thịt gà", 300, "g"],
+      ["Xà lách", 200, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Dầu ô liu", 15, "ml"]
+    ],
+    "steps": [
+      "Ướp ức gà với dầu ô liu và muối tiêu.",
+      "Nướng gà ở 200°C khoảng 20 phút, kiểm tra thịt chín kỹ rồi cắt lát.",
+      "Xếp gà lên rau đã rửa sạch, thêm cà chua và sốt tùy thích."
+    ]
+  },
+  {
+    "title": "Chuối sữa chua mật ong",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 8,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Chuối", 3, "quả"],
+      ["Sữa chua", 300, "g"],
+      ["Mật ong", 15, "ml"]
+    ],
+    "steps": [
+      "Lột vỏ chuối, cắt khoanh vừa ăn.",
+      "Cho sữa chua vào bát, thêm chuối và rưới mật ong.",
+      "Làm lạnh 5 phút trước khi dùng."
+    ]
+  },
+  {
+    "title": "Bánh mì trứng cà chua",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 10,
+    "cook": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bánh mì", 2, "ổ"],
+      ["Trứng gà", 2, "quả"],
+      ["Cà chua", 1, "quả"],
+      ["Xà lách", 50, "g"]
+    ],
+    "steps": [
+      "Rửa rau và thái cà chua. Làm nóng bánh mì.",
+      "Ốp trứng trên chảo đến khi lòng trắng chín hoàn toàn.",
+      "Xẻ bánh mì, thêm rau, cà chua và trứng, nêm gia vị rồi dùng nóng."
+    ]
+  },
+  {
+    "title": "Trứng cuộn rau củ",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 10,
+    "cook": 10,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Trứng gà", 4, "quả"],
+      ["Cà rốt", 0.5, "củ"],
+      ["Hành lá", 10, "g"],
+      ["Muối", 2, "g"]
+    ],
+    "steps": [
+      "Băm nhỏ cà rốt và hành lá, đánh đều với trứng và muối.",
+      "Phết dầu lên chảo chống dính, đổ một lớp trứng mỏng ở lửa nhỏ.",
+      "Cuộn trứng dần, thêm các lớp tiếp theo, nấu chín rồi cắt khoanh."
+    ]
+  },
+  {
+    "title": "Sinh tố dâu sữa chua",
+    "category": "Đồ uống",
+    "image": "dessert",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Dâu tây", 250, "g"],
+      ["Sữa chua", 200, "g"],
+      ["Sữa tươi", 100, "ml"],
+      ["Mật ong", 15, "ml"]
+    ],
+    "steps": [
+      "Rửa dâu, bỏ cuống, để ráo.",
+      "Cho dâu, sữa chua, sữa tươi và mật ong vào máy xay.",
+      "Xay mịn, rót ra ly và thưởng thức ngay."
+    ]
+  },
+  {
+    "title": "Nước chanh mật ong",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 5,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Chanh", 2, "quả"],
+      ["Mật ong", 30, "ml"],
+      ["Nước lọc", 500, "ml"]
+    ],
+    "steps": [
+      "Vắt chanh, bỏ hạt.",
+      "Khuấy mật ong với một ít nước ấm cho tan.",
+      "Thêm nước lọc và nước chanh, khuấy đều rồi thêm đá nếu thích."
+    ]
+  },
+  {
+    "title": "Rau củ nướng hương thảo",
+    "category": "Món chay",
+    "image": "hero",
+    "prep": 15,
+    "cook": 30,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Khoai tây", 400, "g"],
+      ["Cà rốt", 2, "củ"],
+      ["Ớt chuông", 1, "quả"],
+      ["Hương thảo", 5, "g"],
+      ["Dầu ô liu", 25, "ml"]
+    ],
+    "steps": [
+      "Rửa sạch rau củ, cắt thành miếng đều nhau.",
+      "Trộn với dầu ô liu, hương thảo và muối.",
+      "Nướng ở 200°C trong 30 phút, đảo giữa chừng đến khi rau củ mềm vàng."
+    ]
+  },
+  {
+    "title": "Đậu hũ sốt cà chua",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 10,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu hũ", 400, "g"],
+      ["Cà chua", 4, "quả"],
+      ["Hành lá", 15, "g"],
+      ["Tỏi", 3, "tép"]
+    ],
+    "steps": [
+      "Cắt đậu hũ thành miếng, chiên vàng nhẹ hai mặt.",
+      "Phi tỏi rồi thêm cà chua băm, đun nhỏ lửa đến khi mềm.",
+      "Thêm đậu hũ và chút nước, nêm vừa ăn, đun 5 phút rồi rắc hành lá."
+    ]
+  },
+  {
+    "title": "Mì trộn rau củ chay",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mì Ý", 250, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Ớt chuông", 1, "quả"],
+      ["Dưa leo", 1, "quả"]
+    ],
+    "steps": [
+      "Luộc mì chín, xả nhanh với nước mát và để ráo.",
+      "Thái rau củ thành sợi, chần cà rốt và ớt chuông trong nước sôi 1 phút.",
+      "Trộn mì với rau củ và nước tương vừa ăn, dùng ở nhiệt độ phòng."
+    ]
+  },
+  {
+    "title": "Salad trái cây tươi",
+    "category": "Salad",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Dâu tây", 200, "g"],
+      ["Chuối", 2, "quả"],
+      ["Sữa chua", 100, "g"],
+      ["Mật ong", 10, "ml"]
+    ],
+    "steps": [
+      "Sơ chế trái cây, cắt miếng vừa ăn.",
+      "Trộn sữa chua và mật ong thành sốt.",
+      "Rưới sốt lên trái cây, đảo nhẹ và dùng ngay."
+    ]
+  },
+  {
+    "title": "Gà nướng chanh tỏi",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 30,
+    "cook": 45,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Thịt gà", 1000, "g"],
+      ["Chanh", 2, "quả"],
+      ["Tỏi", 6, "tép"],
+      ["Dầu ô liu", 30, "ml"]
+    ],
+    "steps": [
+      "Trộn nước chanh, tỏi băm, dầu ô liu và gia vị, ướp gà 25 phút.",
+      "Làm nóng lò ở 190°C, đặt gà vào khay.",
+      "Nướng khoảng 45 phút, kiểm tra phần dày nhất đạt 74°C, để nghỉ rồi dùng."
+    ]
+  }
+]
