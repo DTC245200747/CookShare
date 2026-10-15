@@ -118,6 +118,8 @@ Kết quả đã thực chạy và giới hạn: [verification](docs/verificatio
 
 Báo cáo kỹ thuật: [PDF 10 trang](docs/CookShare-report.pdf), [nguồn HTML để điền trang bìa](docs/report.html). Điền họ tên/MSSV/lớp trước khi nộp; `node scripts/export-report.mjs` xuất lại PDF.
 
+**Nâng cấp UI/UX:** [thiết kế, ảnh giao diện và kết quả kiểm thử](docs/UI_UX_UPGRADE.md). Bản giao diện mới đạt 6 bài Playwright local, gồm hai bài bổ sung kiểm tra accessibility với axe-core, focus bàn phím và responsive. API và database được giữ nguyên.
+
 ## Cấu trúc
 
 ```text

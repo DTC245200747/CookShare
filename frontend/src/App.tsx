@@ -280,6 +280,7 @@ export default function App() {
         </span>
         <button
           className={"heart " + (favorites.includes(r.id) ? "saved" : "")}
+          aria-pressed={favorites.includes(r.id)}
           disabled={favoriteBusy}
           onClick={() => toggle(r.id)}
           aria-label={
@@ -306,6 +307,10 @@ export default function App() {
         <button className="card-title" onClick={() => openRecipe(r.id)}>
           {r.title}
         </button>
+        <div className="card-author">
+          <ChefHat size={14} />
+          <span>{r.author_name}</span>
+        </div>
         <div className="card-bottom">
           <span>
             <ChefHat size={14} />
@@ -421,13 +426,27 @@ export default function App() {
   );
   return (
     <>
+      <a
+        className="skip-link"
+        href="#main-content"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("main-content")?.focus();
+        }}
+      >
+        Đến nội dung chính
+      </a>
       <header className="header">
         <div className="nav wrap">
           <button className="logo" onClick={() => go("home")}>
             COOK<span>SHARE</span>
             <i />
           </button>
-          <nav className={mobile ? "open" : ""}>
+          <nav
+            id="primary-navigation"
+            aria-label="Điều hướng chính"
+            className={mobile ? "open" : ""}
+          >
             {[
               ["home", "Trang chủ"],
               ["recipes", "Công thức"],
@@ -499,13 +518,19 @@ export default function App() {
               className="mobile-toggle"
               onClick={() => setMobile(!mobile)}
               aria-label="Menu"
+              aria-expanded={mobile}
+              aria-controls="primary-navigation"
             >
               <Menu />
             </button>
           </div>
         </div>
       </header>
-      <main className={"wrap " + (page === "admin" ? "admin-wrap" : "")}>
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className={"wrap " + (page === "admin" ? "admin-wrap" : "")}
+      >
         {error && (
           <div className="error" role="alert">
             {error}
@@ -517,6 +542,7 @@ export default function App() {
             <section className="hero">
               <img
                 className="hero-photo"
+                fetchPriority="high"
                 src={photo("hero")}
                 alt="Món ăn tươi ngon trên bàn bếp"
               />
@@ -535,6 +561,27 @@ export default function App() {
                   <br />
                   Nấu bằng đam mê, chia sẻ bằng cả trái tim.
                 </p>
+                <form
+                  className="hero-search"
+                  role="search"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const query = search;
+                    go("recipes");
+                    setSearch(query);
+                  }}
+                >
+                  <Search size={20} aria-hidden="true" />
+                  <input
+                    aria-label="Bạn muốn nấu món gì?"
+                    placeholder="Bạn muốn nấu món gì hôm nay?"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+                  <button aria-label="Tìm món ngon">
+                    <ArrowUpRight size={22} />
+                  </button>
+                </form>
                 <button className="dark-button" onClick={() => go("recipes")}>
                   Khám phá công thức{" "}
                   <span>
@@ -542,23 +589,22 @@ export default function App() {
                   </span>
                 </button>
                 <div className="hero-foot">
-                  <div className="avatar-stack">
-                    <span>👩🏻‍🍳</span>
-                    <span>👨🏽‍🍳</span>
-                    <span>👩🏼‍🍳</span>
-                  </div>
-                  <div>
-                    <strong>Cùng nhau vào bếp</strong>
-                    <small>Mỗi công thức, một niềm vui mới</small>
-                  </div>
+                  <span>
+                    <BookOpen size={17} />
+                    <b>{loading ? "…" : total}</b> công thức để khám phá
+                  </span>
+                  <span>
+                    <Leaf size={17} />
+                    <b>{categories.length || "…"}</b> danh mục hương vị
+                  </span>
                 </div>
               </div>
               <div className="hero-sticker">
                 <ChefHat size={25} />
                 <span>
-                  Nấu ngon
+                  CẢM HỨNG MỖI NGÀY
                   <br />
-                  <b>theo cách của bạn</b>
+                  <b>Nấu ngon, sống trọn.</b>
                 </span>
               </div>
             </section>

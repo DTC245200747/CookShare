@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useState, useRef, type FormEvent } from "react";
 import {
   LayoutDashboard,
   Users,
@@ -15,6 +15,7 @@ import {
 import { api } from "../services/api";
 import { Confirm, Pagination } from "../components/UI";
 import type { Page, Recipe } from "../types";
+import { useDialogFocus } from "../hooks/useDialogFocus";
 type Stats = {
   users: number;
   recipes: number;
@@ -55,6 +56,8 @@ export function Admin({
       description: string;
     } | null>(null),
     [loading, setLoading] = useState(true);
+  const editDialog = useRef<HTMLFormElement>(null);
+  useDialogFocus(editDialog, () => setEditing(null), !!editing);
   useEffect(() => {
     api<{ data: any }>("/admin/stats")
       .then((r) => setStats(r.data))
@@ -565,8 +568,17 @@ export function Admin({
         )}{" "}
         {editing && (
           <div className="modal-overlay">
-            <form className="auth-modal form-panel" onSubmit={saveCategory}>
-              <h2>{editing.id ? "Chỉnh sửa" : "Thêm mới"}</h2>
+            <form
+              ref={editDialog}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="taxonomy-title"
+              className="auth-modal form-panel"
+              onSubmit={saveCategory}
+            >
+              <h2 id="taxonomy-title">
+                {editing.id ? "Chỉnh sửa" : "Thêm mới"}
+              </h2>
               <label>
                 Tên
                 <input

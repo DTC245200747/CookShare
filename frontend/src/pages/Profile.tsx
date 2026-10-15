@@ -64,7 +64,15 @@ export function Profile({
     }
   }
   return (
-    <section className="page-section">
+    <section className="page-section profile-page">
+      <div className="profile-welcome">
+        <div>
+          <span className="eyebrow">GÓC NHỎ CỦA NGƯỜI YÊU BẾP</span>
+          <h2>Xin chào, {user.name}.</h2>
+          <p>Những hương vị riêng, được viết nên bởi bạn.</p>
+        </div>
+        <ChefHat size={76} aria-hidden="true" />
+      </div>
       <div className="eyebrow">CĂN BẾP CỦA RIÊNG BẠN</div>
       <h1>
         Hồ sơ <em>cá nhân.</em>

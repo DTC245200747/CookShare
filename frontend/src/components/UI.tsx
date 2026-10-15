@@ -1,4 +1,6 @@
 import { X, ArrowLeft, ArrowRight, AlertCircle } from "lucide-react";
+import { useRef } from "react";
+import { useDialogFocus } from "../hooks/useDialogFocus";
 export function Pagination({
   page,
   total,
@@ -44,9 +46,14 @@ export function Confirm({
   onConfirm: () => void;
   busy: boolean;
 }) {
+  const dialog = useRef<HTMLElement>(null);
+  useDialogFocus(dialog, () => {
+    if (!busy) onCancel();
+  });
   return (
     <div className="modal-overlay">
       <section
+        ref={dialog}
         className="auth-modal"
         role="alertdialog"
         aria-modal="true"
@@ -69,7 +76,12 @@ export function Confirm({
 }
 export function Skeleton() {
   return (
-    <div className="recipe-grid" aria-label="Đang tải">
+    <div
+      className="recipe-grid"
+      aria-label="Đang tải"
+      role="status"
+      aria-busy="true"
+    >
       {Array.from({ length: 6 }, (_, i) => (
         <div className="skeleton-card" key={i}>
           <div />
@@ -88,7 +100,7 @@ export function Toast({
   close: () => void;
 }) {
   return (
-    <div className="toast" role="status">
+    <div className="toast" role="status" aria-live="polite" aria-atomic="true">
       {message}
       <button onClick={close} aria-label="Đóng thông báo">
         <X size={16} />
