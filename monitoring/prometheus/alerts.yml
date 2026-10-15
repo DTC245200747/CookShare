@@ -1,0 +1,18 @@
+groups:
+  - name: cookshare
+    rules:
+      - alert: CookShareApiDown
+        expr: up{job="cookshare-api"} == 0
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: CookShare API is unavailable}
+      - alert: CookShareMysqlDown
+        expr: mysql_up == 0
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: MySQL exporter cannot connect to database}
+      - alert: CookShareHighErrorRate
+        expr: sum(rate(cookshare_http_requests_total{status=~"5.."}[5m])) / clamp_min(sum(rate(cookshare_http_requests_total[5m])), 0.001) > 0.05
+        for: 5m
+        labels: {severity: warning}
+        annotations: {summary: API error ratio exceeds 5 percent}

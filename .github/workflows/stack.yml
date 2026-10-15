@@ -1,0 +1,38 @@
+name: Docker stack smoke test
+on: [push, pull_request]
+jobs:
+  stack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GRAFANA_ADMIN_PASSWORD: ci-grafana-password
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare disposable configuration
+        run: |
+          cp .env.example .env
+          sed -i 's/^GRAFANA_ADMIN_PASSWORD=.*/GRAFANA_ADMIN_PASSWORD=ci-grafana-password/' .env
+      - name: Build and start stack
+        run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml --profile tools up -d --build
+      - name: Seed database
+        run: docker compose run --rm seed
+      - name: Validate monitoring configuration
+        run: |
+          docker compose -f docker-compose.yml -f docker-compose.monitoring.yml exec -T prometheus promtool check config /etc/prometheus/prometheus.yml
+          docker compose -f docker-compose.yml -f docker-compose.monitoring.yml exec -T alloy alloy validate /etc/alloy/config.alloy
+      - name: Verify frontend, database, metrics, dashboard and log ingestion
+        run: node scripts/verify-stack.mjs
+      - name: Collect service logs
+        if: always()
+        run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml logs --no-color > stack.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: docker-stack-log
+          path: stack.log
+      - name: Stop disposable stack
+        if: always()
+        run: docker compose -f docker-compose.yml -f docker-compose.monitoring.yml down -v

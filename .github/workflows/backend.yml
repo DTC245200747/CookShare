@@ -1,0 +1,55 @@
+name: Backend checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.4
+        env:
+          MYSQL_ROOT_PASSWORD: ci-root-password
+          MYSQL_DATABASE: cookshare_test
+          MYSQL_USER: cookshare
+          MYSQL_PASSWORD: ci-db-password
+        ports: ['3306:3306']
+        options: --health-cmd="mysqladmin ping -h localhost" --health-interval=5s --health-timeout=5s --health-retries=30
+    env:
+      NODE_ENV: test
+      DB_HOST: 127.0.0.1
+      DB_NAME: cookshare_test
+      DB_USER: cookshare
+      DB_PASSWORD: ci-db-password
+      JWT_SECRET: ci-only-secret-with-more-than-32-characters
+      SEED_ADMIN_PASSWORD: ci-admin-password
+      RUN_DB_TESTS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+      - run: npm ci
+        working-directory: backend
+      - run: npm run build
+        working-directory: backend
+      - run: npm run db:migrate && npm run db:migrate && npm run db:seed && npm run db:seed && npm test
+        working-directory: backend
+      - run: npm ci && npm run build && npx playwright install --with-deps chromium
+        working-directory: frontend
+      - name: Browser integration
+        env:
+          E2E_ADMIN_PASSWORD: ci-admin-password
+        run: |
+          cd backend
+          node dist/server.js > ../web-test.log 2>&1 &
+          cd ../frontend
+          npx playwright test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-report
+          path: |
+            frontend/playwright-report
+            frontend/test-results
+            web-test.log

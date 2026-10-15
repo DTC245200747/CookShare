@@ -1,0 +1,36 @@
+logging {
+  level = "info"
+  format = "json"
+}
+discovery.docker "cookshare" {
+  host = "tcp://docker-socket-proxy:2375"
+  refresh_interval = "10s"
+}
+discovery.relabel "cookshare" {
+  targets = discovery.docker.cookshare.targets
+  rule {
+    source_labels = ["__meta_docker_container_label_com_docker_compose_project"]
+    regex = "cookshare"
+    action = "keep"
+  }
+  rule {
+    source_labels = ["__meta_docker_container_label_com_docker_compose_service"]
+    target_label = "service"
+  }
+  rule {
+    source_labels = ["__meta_docker_container_name"]
+    regex = "/(.*)"
+    target_label = "container"
+  }
+}
+loki.source.docker "cookshare" {
+  host = "tcp://docker-socket-proxy:2375"
+  targets = discovery.relabel.cookshare.output
+  labels = { job = "cookshare" }
+  forward_to = [loki.write.local.receiver]
+}
+loki.write "local" {
+  endpoint {
+    url = "http://loki:3100/loki/api/v1/push"
+  }
+}
