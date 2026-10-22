@@ -11,6 +11,7 @@ export function Auth({
   success: (user: User) => void;
 }) {
   const [register, setRegister] = useState(false),
+    [notice, setNotice] = useState(""),
     [error, setError] = useState(""),
     [busy, setBusy] = useState(false);
   const dialog = useRef<HTMLElement>(null);
@@ -19,15 +20,26 @@ export function Auth({
     e.preventDefault();
     setBusy(true);
     setError("");
-    const f = new FormData(e.currentTarget),
+    setNotice("");
+    const form = e.currentTarget;
+    const f = new FormData(form),
       email = String(f.get("email")),
       password = String(f.get("password"));
     try {
-      if (register)
+      if (register) {
         await api("/auth/register", {
           method: "POST",
           body: JSON.stringify({ name: f.get("name"), email, password }),
         });
+        setRegister(false);
+        setNotice("Tạo tài khoản thành công! Vui lòng đăng nhập để tiếp tục.");
+        const passwordInput = form.elements.namedItem(
+          "password",
+        ) as HTMLInputElement;
+        passwordInput.value = "";
+        passwordInput.focus();
+        return;
+      }
       const r = await api<{ data: { user: User; access_token: string } }>(
         "/auth/login",
         { method: "POST", body: JSON.stringify({ email, password }) },
@@ -76,6 +88,11 @@ export function Auth({
               : "Đăng nhập và lưu giữ những hương vị yêu thích."}
           </p>
           <form onSubmit={submit}>
+            {notice && (
+              <p className="auth-success" role="status">
+                {notice}
+              </p>
+            )}
             {register && (
               <label>
                 Tên của bạn
@@ -119,6 +136,7 @@ export function Auth({
               onClick={() => {
                 setRegister(!register);
                 setError("");
+                setNotice("");
               }}
             >
               {register ? "Đăng nhập" : "Đăng ký ngay"}

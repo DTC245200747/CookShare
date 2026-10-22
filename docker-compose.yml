@@ -31,6 +31,8 @@ services:
       DB_USER: ${DB_MIGRATION_USER:-cookshare_migrator}
       DB_PASSWORD: ${DB_MIGRATION_PASSWORD:?Set DB_MIGRATION_PASSWORD}
     command: [node, dist/config/migrate.js]
+    read_only: true
+    cap_drop: [ALL]
     depends_on:
       db:
         condition: service_healthy
@@ -77,6 +79,11 @@ services:
     networks: [web]
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, 'http://127.0.0.1:8080/health/live']
+      interval: 10s
+      timeout: 5s
+      retries: 5
   seed:
     profiles: [seed]
     build:
@@ -90,6 +97,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
       SEED_ADMIN_PASSWORD: ${SEED_ADMIN_PASSWORD:?Set SEED_ADMIN_PASSWORD}
     command: [node, dist/config/seed.js]
+    read_only: true
     depends_on:
       migrate:
         condition: service_completed_successfully

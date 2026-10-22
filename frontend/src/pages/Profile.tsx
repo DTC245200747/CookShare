@@ -3,6 +3,7 @@ import { Camera, ChefHat, LogOut } from "lucide-react";
 import { api, uploadImage } from "../services/api";
 import type { User } from "../types";
 import { ProfileCollections } from "../components/ProfileCollections";
+import { LogoutDialog } from "../components/LogoutDialog";
 export function Profile({
   user,
   updated,
@@ -15,6 +16,7 @@ export function Profile({
   notify: (s: string) => void;
 }) {
   const [name, setName] = useState(user.name),
+    [showLogout, setShowLogout] = useState(false),
     [bio, setBio] = useState(user.bio || ""),
     [avatar, setAvatar] = useState(user.avatar_url || ""),
     [busy, setBusy] = useState(false),
@@ -178,25 +180,22 @@ export function Profile({
               Cập nhật mật khẩu
             </button>
           </form>
-          <button
-            className="logout-button"
-            onClick={async () => {
-              try {
-                await api("/auth/logout", { method: "POST" });
-              } catch (e) {
-                notify((e as Error).message);
-                return;
-              }
-              sessionStorage.removeItem("cookshare-token");
-              logout();
-            }}
-          >
+          <button className="logout-button" onClick={() => setShowLogout(true)}>
             <LogOut size={17} />
-            Đăng xuất khỏi mọi thiết bị
+            Đăng xuất
           </button>
         </div>
       </div>
       <ProfileCollections />
+      {showLogout && (
+        <LogoutDialog
+          close={() => setShowLogout(false)}
+          done={() => {
+            notify("Đã đăng xuất tài khoản.");
+            logout();
+          }}
+        />
+      )}
     </section>
   );
 }

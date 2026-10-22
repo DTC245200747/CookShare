@@ -30,6 +30,12 @@ const authLimit = rateLimit({
   limit: 30,
   standardHeaders: "draft-7",
   legacyHeaders: false,
+  handler: (_req, res) =>
+    res
+      .status(429)
+      .json({
+        error: "Too many authentication attempts. Please try again later.",
+      }),
 });
 auth.post("/register", authLimit, async (req, res) => {
   const input = credentials
@@ -41,16 +47,14 @@ auth.post("/register", authLimit, async (req, res) => {
     "INSERT INTO users (name,email,password_hash) VALUES (?,?,?)",
     [input.name, input.email, hash],
   );
-  res
-    .status(201)
-    .json({
-      data: {
-        id: result.insertId,
-        name: input.name,
-        email: input.email,
-        role: "member",
-      },
-    });
+  res.status(201).json({
+    data: {
+      id: result.insertId,
+      name: input.name,
+      email: input.email,
+      role: "member",
+    },
+  });
 });
 auth.post("/login", authLimit, async (req, res) => {
   const input = credentials.strict().parse(req.body);

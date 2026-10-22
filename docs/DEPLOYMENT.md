@@ -1,5 +1,7 @@
 # Triển khai và vận hành
 
+Kết quả thực chạy mới nhất ngày 22/10/2026, script PowerShell và giới hạn môi trường: [DE29_CHECKLIST](DE29_CHECKLIST.md). Khởi tạo secrets bằng `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Initialize-De29.ps1` khi chưa có `.env`; không ghi đè credentials đang dùng. Verifier Windows: `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Test-De29.ps1 -Start`. Cần đủ dung lượng Docker trước khi build; không dùng reset/prune/down -v để xử lý thiếu đĩa nếu chưa bảo vệ dữ liệu.
+
 ## Docker Compose
 
 Yêu cầu Docker Engine + Compose v2 hoạt động. Từ gốc repository:
@@ -65,8 +67,8 @@ Alloy khám phá container CookShare qua socket proxy chỉ cho đọc, gán nh�
 
 ```logql
 {job="cookshare",service="api"}
-{job="cookshare",service="api"} | json | status >= 400
-sum by(status)(count_over_time({job="cookshare",service="api"} | json [5m]))
+{job="cookshare",service="api"} | json | __error__="" | status >= 400
+sum by(status)(count_over_time({job="cookshare",service="api"} | json | __error__="" [5m]))
 {job="cookshare",service="nginx"} |= "GET /api/"
 ```
 

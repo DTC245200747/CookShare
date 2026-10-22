@@ -36,6 +36,10 @@ app.use(
     limit: 200,
     standardHeaders: "draft-7",
     legacyHeaders: false,
+    handler: (_req, res) =>
+      res
+        .status(429)
+        .json({ error: "Too many requests. Please try again later." }),
   }),
 );
 app.get("/metrics", async (req, res) => {

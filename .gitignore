@@ -11,3 +11,10 @@ test-results/
 playwright-report/
 .tools/
 logs/
+
+# Local screenshots, runtime environment reports and database backups
+docs/report-evidence/*
+!docs/report-evidence/README.md
+*.sql.dump
+*.sql.gz
+*.sql.bak

@@ -1,3 +1,4 @@
+import { randomBytes } from "node:crypto";
 import { test, expect } from "@playwright/test";
 import { fileURLToPath } from "node:url";
 const image = fileURLToPath(
@@ -43,7 +44,7 @@ test("public website, filters and desktop/tablet/mobile layouts", async ({
       await page
         .locator("img")
         .evaluateAll((images) =>
-          images.every((img) => img.complete && img.naturalWidth > 0),
+          images.every((img) => img instanceof HTMLImageElement && img.complete && img.naturalWidth > 0),
         ),
     ).toBe(true);
   }
@@ -55,13 +56,13 @@ test("public website, filters and desktop/tablet/mobile layouts", async ({
   await page
     .getByRole("textbox", { name: "Tên món ăn", exact: true })
     .fill("Salad");
-  await expect(page.locator(".result-count")).toContainText("4 công thức");
+  await expect(page.locator(".result-count")).toContainText("24 công thức");
   await page
     .getByRole("textbox", { name: "Tìm theo nguyên liệu" })
     .fill("Cà chua");
   await page.getByLabel("Thời gian", { exact: true }).selectOption("15");
   await page.getByLabel("Độ khó", { exact: true }).selectOption("easy");
-  await expect(page.locator(".recipe-card")).toHaveCount(2);
+  await expect(page.locator(".recipe-card")).toHaveCount(4);
   await page.getByRole("textbox", { name: "Tên món ăn", exact: true }).fill("");
   await page.getByRole("textbox", { name: "Tìm theo nguyên liệu" }).fill("");
   await page.getByLabel("Thời gian", { exact: true }).selectOption("");
@@ -73,10 +74,12 @@ test("public website, filters and desktop/tablet/mobile layouts", async ({
   await expect(page.locator(".ingredient-list button").first()).toBeVisible();
   await page.locator(".ingredient-list button").first().click();
   await expect(page.locator(".ingredient-list .checked")).toHaveCount(1);
-  await page.getByRole('button',{name:'Đăng nhập để bình luận',exact:true}).click();
-  await expect(page.getByRole('dialog')).toBeVisible();
-  await page.keyboard.press('Escape');
-  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await page
+    .getByRole("button", { name: "Đăng nhập để bình luận", exact: true })
+    .click();
+  await expect(page.getByRole("dialog")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog")).toHaveCount(0);
   await page.screenshot({
     path: "test-results/recipe-desktop.png",
     fullPage: true,
@@ -96,6 +99,8 @@ test("public website, filters and desktop/tablet/mobile layouts", async ({
 test("account, profile, upload, create-preview-edit-delete, favorite, rating and comments", async ({
   page,
 }) => {
+  const password = randomBytes(24).toString("hex");
+  const changedPassword = randomBytes(24).toString("hex");
   const title = `Món thử giao diện ${Date.now()}`,
     email = `browser${Date.now()}@test.local`;
   await page.goto("/");
@@ -103,14 +108,34 @@ test("account, profile, upload, create-preview-edit-delete, favorite, rating and
   await page.getByLabel("Email", { exact: true }).fill(email);
   await page
     .getByLabel("Mật khẩu", { exact: true })
-    .fill("browser-password123");
+    .fill(password);
   await page.getByRole("button", { name: "Đăng nhập", exact: true }).click();
   await expect(page.getByRole("alert")).toContainText("Email hoặc mật khẩu");
   await page.getByRole("button", { name: "Đăng ký ngay" }).click();
   await page.getByLabel("Tên của bạn").fill("Đầu bếp kiểm thử");
+  const loginRequests: string[] = [];
+  page.on("request", (request) => {
+    if (request.url().endsWith("/auth/login"))
+      loginRequests.push(request.url());
+  });
   await page
     .getByRole("button", { name: "Tạo tài khoản", exact: true })
     .click();
+  await expect(page.getByRole("dialog")).toBeVisible();
+  await expect(page.getByRole("status")).toContainText(
+    "Tạo tài khoản thành công",
+  );
+  await expect(page.getByLabel("Tên của bạn")).toHaveCount(0);
+  await expect(page.getByLabel("Email", { exact: true })).toHaveValue(email);
+  await expect(page.getByLabel("Mật khẩu", { exact: true })).toHaveValue("");
+  expect(loginRequests).toHaveLength(0);
+  expect(
+    await page.evaluate(() => sessionStorage.getItem("cookshare-token")),
+  ).toBeNull();
+  await page
+    .getByLabel("Mật khẩu", { exact: true })
+    .fill(password);
+  await page.getByRole("button", { name: "Đăng nhập", exact: true }).click();
   await expect(page.getByRole("dialog")).toHaveCount(0);
   await page.getByLabel("Tài khoản", { exact: true }).click();
   await page.getByLabel("Tên hiển thị").fill("Bếp thử đã cập nhật");
@@ -134,9 +159,15 @@ test("account, profile, upload, create-preview-edit-delete, favorite, rating and
   await page
     .getByLabel("Nguyên liệu 1", { exact: true })
     .selectOption({ index: 1 });
-  await page.getByLabel('Tên nguyên liệu mới').fill(`Nguyên liệu từ UI ${Date.now()}`);
-  await page.getByRole('button',{name:'Thêm nguyên liệu mới',exact:true}).click();
-  await expect(page.getByLabel('Nguyên liệu 2',{exact:true})).toHaveValue(/^[1-9][0-9]*$/);
+  await page
+    .getByLabel("Tên nguyên liệu mới")
+    .fill(`Nguyên liệu từ UI ${Date.now()}`);
+  await page
+    .getByRole("button", { name: "Thêm nguyên liệu mới", exact: true })
+    .click();
+  await expect(page.getByLabel("Nguyên liệu 2", { exact: true })).toHaveValue(
+    /^[1-9][0-9]*$/,
+  );
   await page
     .getByPlaceholder("Mô tả bước 1")
     .fill("Rửa sạch nguyên liệu, nấu chín và dùng nóng.");
@@ -164,8 +195,10 @@ test("account, profile, upload, create-preview-edit-delete, favorite, rating and
   await page
     .getByRole("button", { name: "Gửi bình luận", exact: true })
     .click();
-  await expect(page.locator(".comment>p")).toHaveText('<img src=x onerror="window.cookshareXss=true">');
-  await expect(page.locator('.comment>p img')).toHaveCount(0);
+  await expect(page.locator(".comment>p")).toHaveText(
+    '<img src=x onerror="window.cookshareXss=true">',
+  );
+  await expect(page.locator(".comment>p img")).toHaveCount(0);
   await page
     .locator(".comment-actions")
     .getByRole("button", { name: "Sửa", exact: true })
@@ -203,23 +236,87 @@ test("account, profile, upload, create-preview-edit-delete, favorite, rating and
   );
   await expect(page.locator(".recipe-card")).toHaveCount(0);
   await page.getByLabel("Tài khoản", { exact: true }).click();
-  await page.getByLabel('Mật khẩu hiện tại',{exact:true}).fill('browser-password123');
-  await page.getByLabel('Mật khẩu mới',{exact:true}).fill('browser-changed-password123');
-  await page.getByLabel('Xác nhận mật khẩu mới',{exact:true}).fill('browser-changed-password123');
-  await page.getByRole('button',{name:'Cập nhật mật khẩu',exact:true}).click();
-  await expect(page.getByRole('button',{name:'Bếp của tôi',exact:true})).toHaveCount(0);
-  await page.getByLabel('Tài khoản',{exact:true}).click();
-  await page.getByLabel('Email',{exact:true}).fill(email);
-  await page.getByLabel('Mật khẩu',{exact:true}).fill('browser-changed-password123');
-  await page.getByRole('button',{name:'Đăng nhập',exact:true}).click();
-  await expect(page.getByRole('dialog')).toHaveCount(0);
-  await page.getByLabel('Tài khoản',{exact:true}).click();
   await page
-    .getByRole("button", { name: "Đăng xuất khỏi mọi thiết bị" })
+    .getByLabel("Mật khẩu hiện tại", { exact: true })
+    .fill(password);
+  await page
+    .getByLabel("Mật khẩu mới", { exact: true })
+    .fill(changedPassword);
+  await page
+    .getByLabel("Xác nhận mật khẩu mới", { exact: true })
+    .fill(changedPassword);
+  await page
+    .getByRole("button", { name: "Cập nhật mật khẩu", exact: true })
     .click();
   await expect(
     page.getByRole("button", { name: "Bếp của tôi", exact: true }),
   ).toHaveCount(0);
+  await page.getByLabel("Tài khoản", { exact: true }).click();
+  await page.getByLabel("Email", { exact: true }).fill(email);
+  await page
+    .getByLabel("Mật khẩu", { exact: true })
+    .fill(changedPassword);
+  await page.getByRole("button", { name: "Đăng nhập", exact: true }).click();
+  await expect(page.getByRole("dialog")).toHaveCount(0);
+  await page.getByLabel("Tài khoản", { exact: true }).click();
+  await page.getByRole("button", { name: "Đăng xuất", exact: true }).click();
+  await page
+    .getByRole("button", { name: /Đăng xuất khỏi mọi thiết bị/ })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "Xác nhận đăng xuất?" }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Hủy", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Bếp của tôi", exact: true }),
+  ).toBeVisible();
+  const otherLogin = await page.request.post("/api/v1/auth/login", {
+    data: { email, password: changedPassword },
+  });
+  expect(otherLogin.ok()).toBe(true);
+  const otherToken = (await otherLogin.json()).data.access_token;
+  const otherHeaders = { Authorization: `Bearer ${otherToken}` };
+  await page.getByRole("button", { name: "Đăng xuất", exact: true }).click();
+  await page
+    .getByRole("button", { name: /Đăng xuất khỏi thiết bị này/ })
+    .click();
+  await page
+    .getByRole("button", { name: "Xác nhận đăng xuất", exact: true })
+    .click();
+  await expect(
+    page.getByRole("button", { name: "Bếp của tôi", exact: true }),
+  ).toHaveCount(0);
+  expect(
+    await page.evaluate(() => sessionStorage.getItem("cookshare-token")),
+  ).toBeNull();
+  expect(
+    (
+      await page.request.get("/api/v1/auth/me", { headers: otherHeaders })
+    ).status(),
+  ).toBe(200);
+  await page.getByLabel("Tài khoản", { exact: true }).click();
+  await page.getByLabel("Email", { exact: true }).fill(email);
+  await page
+    .getByLabel("Mật khẩu", { exact: true })
+    .fill(changedPassword);
+  await page.getByRole("button", { name: "Đăng nhập", exact: true }).click();
+  await expect(page.getByRole("dialog")).toHaveCount(0);
+  await page.getByLabel("Tài khoản", { exact: true }).click();
+  await page.getByRole("button", { name: "Đăng xuất", exact: true }).click();
+  await page
+    .getByRole("button", { name: /Đăng xuất khỏi mọi thiết bị/ })
+    .click();
+  await page
+    .getByRole("button", { name: "Xác nhận đăng xuất", exact: true })
+    .click();
+  await expect(
+    page.getByRole("button", { name: "Bếp của tôi", exact: true }),
+  ).toHaveCount(0);
+  expect(
+    (
+      await page.request.get("/api/v1/auth/me", { headers: otherHeaders })
+    ).status(),
+  ).toBe(401);
 });
 test("admin dashboard, categories, moderation and user access controls", async ({
   page,
@@ -234,7 +331,7 @@ test("admin dashboard, categories, moderation and user access controls", async (
   await page.getByRole("button", { name: "Đăng nhập", exact: true }).click();
   await page.getByRole("button", { name: "Quản trị", exact: true }).click();
   await expect(page.locator(".stat-card")).toHaveCount(4);
-  await expect(page.locator(".stat-card").nth(1)).toContainText("21");
+  await expect(page.locator(".stat-card").nth(1)).toContainText("141");
   await page.screenshot({
     path: "test-results/admin-desktop.png",
     fullPage: true,

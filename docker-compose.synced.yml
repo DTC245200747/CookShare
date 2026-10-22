@@ -1,0 +1,22 @@
+# Active data-sync configuration, applied after user confirmation on 2026-10-22.
+services:
+  api:
+    image: cookshare-api:validated-sync-20261022121306_13d09f
+    pull_policy: never
+    environment:
+      DB_NAME: cookshare_sync_20261022121306_13d09f
+    volumes:
+      - synced_uploads:/app/backend/uploads
+  migrate:
+    environment:
+      DB_NAME: cookshare_sync_20261022121306_13d09f
+  seed:
+    environment:
+      DB_NAME: cookshare_sync_20261022121306_13d09f
+  nginx:
+    image: cookshare-nginx:preserved-sync-20261022121306_13d09f
+    pull_policy: never
+volumes:
+  synced_uploads:
+    external: true
+    name: cookshare_uploads_sync_20261022121306_13d09f

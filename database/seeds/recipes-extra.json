@@ -1,0 +1,2590 @@
+[
+  {
+    "title": "Salad bắp cải tím táo xanh",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bắp cải tím", 200, "g"],
+      ["Táo xanh", 1, "quả"],
+      ["Cà rốt", 1, "củ"],
+      ["Sữa chua không đường", 80, "g"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Bào mỏng bắp cải và cà rốt, thái táo thành que.",
+      "Khuấy sữa chua với nước chanh thành sốt.",
+      "Trộn rau và táo với sốt, làm mát 10 phút rồi dùng."
+    ],
+    "servings": 4,
+    "description": "Salad bắp cải tím táo xanh: salad tự làm với bắp cải tím, táo xanh, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad khoai tây trứng",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Khoai tây", 400, "g"],
+      ["Trứng gà", 2, "quả"],
+      ["Dưa leo", 1, "quả"],
+      ["Mayonnaise", 40, "g"],
+      ["Muối", 2, "g"]
+    ],
+    "steps": [
+      "Luộc khoai tây đến mềm, để nguội rồi cắt khối.",
+      "Luộc trứng chín, bóc vỏ và cắt miếng; thái dưa leo.",
+      "Trộn tất cả với mayonnaise và muối, giữ lạnh trước khi ăn."
+    ],
+    "servings": 4,
+    "description": "Salad khoai tây trứng: salad tự làm với khoai tây, trứng gà, dưa leo. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad đậu gà Địa Trung Hải",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu gà chín", 250, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Dưa leo", 1, "quả"],
+      ["Dầu ô liu", 20, "ml"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Rửa đậu gà chín, để ráo; thái cà chua và dưa leo.",
+      "Đánh dầu ô liu cùng nước chanh.",
+      "Trộn đậu với rau và sốt, để ngấm 10 phút."
+    ],
+    "servings": 4,
+    "description": "Salad đậu gà Địa Trung Hải: salad tự làm với đậu gà chín, cà chua, dưa leo. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad củ dền phô mai",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Củ dền", 300, "g"],
+      ["Phô mai feta", 80, "g"],
+      ["Xà lách", 100, "g"],
+      ["Dầu ô liu", 15, "ml"],
+      ["Giấm táo", 10, "ml"]
+    ],
+    "steps": [
+      "Luộc củ dền nguyên vỏ đến mềm rồi bóc vỏ, cắt miếng.",
+      "Rửa xà lách và để thật ráo.",
+      "Xếp rau cùng củ dền, rắc feta rồi rưới dầu và giấm."
+    ],
+    "servings": 4,
+    "description": "Salad củ dền phô mai: salad tự làm với củ dền, phô mai feta, xà lách. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad xoài tôm",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Xoài xanh", 1, "quả"],
+      ["Tôm", 250, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Nước mắm", 15, "ml"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Luộc tôm đến khi chín đục, bóc vỏ và bỏ chỉ lưng.",
+      "Bào xoài và cà rốt thành sợi.",
+      "Pha nước mắm với nước chanh, trộn cùng tôm và rau."
+    ],
+    "servings": 4,
+    "description": "Salad xoài tôm: salad tự làm với xoài xanh, tôm, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad rong biển mè",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Rong biển khô", 20, "g"],
+      ["Dưa leo", 1, "quả"],
+      ["Mè rang", 15, "g"],
+      ["Dầu mè", 10, "ml"],
+      ["Giấm gạo", 15, "ml"]
+    ],
+    "steps": [
+      "Ngâm rong biển theo hướng dẫn bao bì rồi xả sạch, để ráo.",
+      "Thái dưa leo mỏng, trộn giấm gạo với dầu mè.",
+      "Đảo rong biển và dưa leo với sốt, rắc mè rang."
+    ],
+    "servings": 4,
+    "description": "Salad rong biển mè: salad tự làm với rong biển khô, dưa leo, mè rang. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad bí đỏ nướng",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bí đỏ", 400, "g"],
+      ["Xà lách", 120, "g"],
+      ["Hạt bí", 25, "g"],
+      ["Dầu ô liu", 20, "ml"],
+      ["Giấm balsamic", 15, "ml"]
+    ],
+    "steps": [
+      "Cắt bí thành miếng, trộn nửa lượng dầu rồi nướng 200°C trong 25 phút.",
+      "Rửa xà lách, để ráo và trải lên đĩa.",
+      "Thêm bí đã nguội bớt, rắc hạt bí và rưới dầu cùng giấm."
+    ],
+    "servings": 4,
+    "description": "Salad bí đỏ nướng: salad tự làm với bí đỏ, xà lách, hạt bí. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad đậu lăng cà rốt",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu lăng", 150, "g"],
+      ["Cà rốt", 2, "củ"],
+      ["Hành tím", 1, "củ"],
+      ["Dầu ô liu", 15, "ml"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Luộc đậu lăng 20–25 phút đến mềm nhưng còn nguyên hạt, để ráo.",
+      "Bào cà rốt, thái mỏng hành tím.",
+      "Trộn đậu nguội với rau, dầu ô liu và nước chanh."
+    ],
+    "servings": 4,
+    "description": "Salad đậu lăng cà rốt: salad tự làm với đậu lăng, cà rốt, hành tím. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad dưa hấu bạc hà",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Dưa hấu", 500, "g"],
+      ["Phô mai feta", 80, "g"],
+      ["Bạc hà", 10, "g"],
+      ["Dầu ô liu", 10, "ml"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Bỏ hạt dưa hấu và cắt thành khối.",
+      "Rửa lá bạc hà, thấm khô và xé nhỏ.",
+      "Xếp dưa cùng feta, thêm bạc hà, dầu ô liu và nước chanh."
+    ],
+    "servings": 4,
+    "description": "Salad dưa hấu bạc hà: salad tự làm với dưa hấu, phô mai feta, bạc hà. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad mì soba",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mì soba", 200, "g"],
+      ["Dưa leo", 1, "quả"],
+      ["Cà rốt", 1, "củ"],
+      ["Nước tương", 20, "ml"],
+      ["Dầu mè", 10, "ml"]
+    ],
+    "steps": [
+      "Luộc mì theo bao bì, xả nước mát và để ráo.",
+      "Thái sợi dưa leo và cà rốt.",
+      "Trộn mì với rau, nước tương và dầu mè, dùng mát."
+    ],
+    "servings": 4,
+    "description": "Salad mì soba: salad tự làm với mì soba, dưa leo, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad bơ bắp ngọt",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bơ", 2, "quả"],
+      ["Bắp ngọt", 200, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Chanh", 1, "quả"],
+      ["Dầu ô liu", 15, "ml"]
+    ],
+    "steps": [
+      "Luộc bắp chín rồi tách hạt và để nguội.",
+      "Cắt bơ, cà chua thành khối vừa ăn.",
+      "Trộn nhẹ với bắp, nước chanh và dầu ô liu để bơ không nát."
+    ],
+    "servings": 4,
+    "description": "Salad bơ bắp ngọt: salad tự làm với bơ, bắp ngọt, cà chua. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad nấm áp chảo",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Nấm mỡ", 250, "g"],
+      ["Xà lách", 150, "g"],
+      ["Tỏi", 2, "tép"],
+      ["Dầu ô liu", 20, "ml"],
+      ["Giấm táo", 15, "ml"]
+    ],
+    "steps": [
+      "Lau sạch nấm, cắt đôi và băm tỏi.",
+      "Áp chảo nấm với tỏi và nửa lượng dầu đến chín vàng.",
+      "Đặt nấm ấm lên rau sạch, thêm phần dầu còn lại và giấm."
+    ],
+    "servings": 4,
+    "description": "Salad nấm áp chảo: salad tự làm với nấm mỡ, xà lách, tỏi. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad cam củ cải",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cam", 2, "quả"],
+      ["Củ cải đỏ", 150, "g"],
+      ["Xà lách", 100, "g"],
+      ["Dầu ô liu", 15, "ml"],
+      ["Mật ong", 10, "g"]
+    ],
+    "steps": [
+      "Gọt cam, tách múi và giữ lại một ít nước cam.",
+      "Thái lát mỏng củ cải, rửa xà lách và để ráo.",
+      "Khuấy dầu với mật ong và nước cam rồi rưới lên rau."
+    ],
+    "servings": 4,
+    "description": "Salad cam củ cải: salad tự làm với cam, củ cải đỏ, xà lách. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad cá ngừ đậu trắng",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cá ngừ đóng hộp", 150, "g"],
+      ["Đậu trắng chín", 200, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Hành tím", 1, "củ"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Để ráo cá ngừ và đậu trắng.",
+      "Thái cà chua, hành tím thành miếng nhỏ.",
+      "Trộn đậu cùng cá và rau, thêm nước chanh rồi dùng ngay."
+    ],
+    "servings": 4,
+    "description": "Salad cá ngừ đậu trắng: salad tự làm với cá ngừ đóng hộp, đậu trắng chín, cà chua. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad bông cải sốt mè",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bông cải xanh", 300, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Mè rang", 20, "g"],
+      ["Nước tương", 15, "ml"],
+      ["Dầu mè", 10, "ml"]
+    ],
+    "steps": [
+      "Cắt bông cải thành nhánh nhỏ, chần cùng cà rốt thái lát 3–4 phút.",
+      "Vớt rau vào nước mát rồi để ráo.",
+      "Giã mè, khuấy với nước tương và dầu mè, trộn cùng rau."
+    ],
+    "servings": 4,
+    "description": "Salad bông cải sốt mè: salad tự làm với bông cải xanh, cà rốt, mè rang. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad quinoa đậu đen",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Quinoa", 120, "g"],
+      ["Đậu đen chín", 150, "g"],
+      ["Bắp ngọt", 100, "g"],
+      ["Cà chua", 1, "quả"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Vo quinoa, nấu với 240 ml nước đến cạn và hạt nở mềm.",
+      "Luộc bắp chín; rửa đậu đã nấu và thái cà chua.",
+      "Để quinoa nguội, trộn cùng đậu, bắp, cà chua và nước chanh."
+    ],
+    "servings": 4,
+    "description": "Salad quinoa đậu đen: salad tự làm với quinoa, đậu đen chín, bắp ngọt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad lê óc chó",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Lê", 2, "quả"],
+      ["Óc chó", 40, "g"],
+      ["Xà lách", 150, "g"],
+      ["Sữa chua không đường", 80, "g"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Rang óc chó trên chảo khô cho thơm rồi để nguội.",
+      "Rửa rau, thái lê mỏng và trộn với chút nước chanh.",
+      "Khuấy sữa chua với nước chanh còn lại, rưới lên rau và lê, thêm hạt."
+    ],
+    "servings": 4,
+    "description": "Salad lê óc chó: salad tự làm với lê, óc chó, xà lách. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad miến chay",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Miến", 150, "g"],
+      ["Nấm hương", 100, "g"],
+      ["Dưa leo", 1, "quả"],
+      ["Cà rốt", 1, "củ"],
+      ["Nước tương", 20, "ml"]
+    ],
+    "steps": [
+      "Ngâm miến rồi chần chín theo bao bì, cắt ngắn.",
+      "Luộc nấm chín và thái lát; bào sợi dưa leo, cà rốt.",
+      "Trộn miến với rau, nấm và nước tương, dùng trong ngày."
+    ],
+    "servings": 4,
+    "description": "Salad miến chay: salad tự làm với miến, nấm hương, dưa leo. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad cà tím nướng",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cà tím", 2, "quả"],
+      ["Cà chua", 2, "quả"],
+      ["Ngò rí", 15, "g"],
+      ["Dầu ô liu", 20, "ml"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Quét dầu lên cà tím, nướng 200°C khoảng 25 phút đến mềm.",
+      "Để nguội bớt rồi cắt cà tím; thái cà chua và ngò.",
+      "Trộn nhẹ với nước chanh và phần dầu còn lại."
+    ],
+    "servings": 4,
+    "description": "Salad cà tím nướng: salad tự làm với cà tím, cà chua, ngò rí. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Salad cải kale hạt điều",
+    "category": "Salad",
+    "image": "salad",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cải kale", 200, "g"],
+      ["Hạt điều rang", 40, "g"],
+      ["Táo", 1, "quả"],
+      ["Dầu ô liu", 15, "ml"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Bỏ cuống cứng kale, rửa sạch và xé nhỏ.",
+      "Bóp nhẹ lá với dầu và nước chanh trong 2 phút.",
+      "Thêm táo thái lát cùng hạt điều, đảo đều và dùng."
+    ],
+    "servings": 4,
+    "description": "Salad cải kale hạt điều: salad tự làm với cải kale, hạt điều rang, táo. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Trà đào cam sả",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 5,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Trà đen", 5, "g"],
+      ["Đào ngâm", 100, "g"],
+      ["Cam", 1, "quả"],
+      ["Sả", 2, "cây"],
+      ["Đường", 20, "g"]
+    ],
+    "steps": [
+      "Đập dập sả, đun với 400 ml nước trong 5 phút.",
+      "Dùng nước sả nóng ủ trà 4 phút rồi lọc, hòa đường.",
+      "Thêm đào, cam thái lát và đá khi trà nguội."
+    ],
+    "servings": 2,
+    "description": "Trà đào cam sả: đồ uống tự làm với trà đen, đào ngâm, cam. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Trà vải hoa nhài",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Trà nhài", 5, "g"],
+      ["Vải đóng hộp", 120, "g"],
+      ["Đường", 15, "g"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Ủ trà nhài với 400 ml nước nóng 3 phút, lọc bã.",
+      "Hòa đường vào trà và để nguội.",
+      "Thêm vải, một ít nước chanh và đá, khuấy đều."
+    ],
+    "servings": 2,
+    "description": "Trà vải hoa nhài: đồ uống tự làm với trà nhài, vải đóng hộp, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Trà gừng quế",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Gừng", 25, "g"],
+      ["Quế thanh", 5, "g"],
+      ["Mật ong", 25, "g"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Rửa gừng và thái lát mỏng.",
+      "Đun gừng, quế với 500 ml nước 10 phút rồi lọc.",
+      "Để nước ấm, hòa mật ong và thêm chanh theo khẩu vị."
+    ],
+    "servings": 2,
+    "description": "Trà gừng quế: đồ uống tự làm với gừng, quế thanh, mật ong. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Trà tắc mật ong",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Trà xanh", 5, "g"],
+      ["Tắc", 6, "quả"],
+      ["Mật ong", 30, "g"]
+    ],
+    "steps": [
+      "Ủ trà với 400 ml nước nóng 3 phút rồi lọc.",
+      "Rửa tắc, cắt đôi, vắt nước và bỏ hạt.",
+      "Để trà nguội bớt, khuấy mật ong, nước tắc và thêm đá."
+    ],
+    "servings": 2,
+    "description": "Trà tắc mật ong: đồ uống tự làm với trà xanh, tắc, mật ong. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Trà hibiscus cam",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Hoa hibiscus khô", 10, "g"],
+      ["Cam", 1, "quả"],
+      ["Đường", 25, "g"]
+    ],
+    "steps": [
+      "Tráng hoa khô rồi hãm với 500 ml nước nóng 8 phút.",
+      "Lọc trà, hòa đường và để nguội.",
+      "Thêm nước cam vừa vắt, vài lát cam và đá."
+    ],
+    "servings": 2,
+    "description": "Trà hibiscus cam: đồ uống tự làm với hoa hibiscus khô, cam, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sinh tố chuối bơ đậu phộng",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Chuối", 2, "quả"],
+      ["Bơ đậu phộng", 30, "g"],
+      ["Sữa tươi", 250, "ml"],
+      ["Yến mạch", 20, "g"]
+    ],
+    "steps": [
+      "Bóc chuối và cắt khúc, làm lạnh trước nếu muốn.",
+      "Cho chuối, sữa, yến mạch và bơ đậu phộng vào máy.",
+      "Xay mịn 45–60 giây, rót ra ly và dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Sinh tố chuối bơ đậu phộng: đồ uống tự làm với chuối, bơ đậu phộng, sữa tươi. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sinh tố dâu chuối sữa chua",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Dâu tây", 250, "g"],
+      ["Sữa chua không đường", 150, "g"],
+      ["Sữa tươi", 100, "ml"],
+      ["Mật ong", 15, "g"],
+      ["Chuối", 1, "quả"]
+    ],
+    "steps": [
+      "Rửa dâu, bỏ cuống và cắt đôi; bóc vỏ một quả chuối.",
+      "Cho dâu, chuối, sữa chua, sữa và mật ong vào máy.",
+      "Xay nhuyễn, thêm ít đá nếu muốn rồi dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Sinh tố dâu chuối sữa chua: đồ uống tự làm với dâu tây, chuối và sữa chua. Dùng ngay sau khi xay hoặc giữ lạnh đến khi dùng."
+  },
+  {
+    "title": "Sinh tố xoài dừa",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Xoài chín", 300, "g"],
+      ["Nước cốt dừa", 100, "ml"],
+      ["Sữa tươi", 150, "ml"]
+    ],
+    "steps": [
+      "Gọt xoài và cắt miếng, bỏ hạt.",
+      "Cho xoài, nước cốt dừa và sữa vào máy.",
+      "Xay mịn, rót ra ly lạnh và dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Sinh tố xoài dừa: đồ uống tự làm với xoài chín, nước cốt dừa, sữa tươi. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sinh tố thanh long đỏ",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thanh long đỏ", 300, "g"],
+      ["Chuối", 1, "quả"],
+      ["Sữa chua không đường", 100, "g"],
+      ["Sữa tươi", 100, "ml"]
+    ],
+    "steps": [
+      "Bóc vỏ thanh long và chuối, cắt khối.",
+      "Cho trái cây vào máy cùng sữa chua và sữa tươi.",
+      "Xay nhuyễn, rót ly và dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Sinh tố thanh long đỏ: đồ uống tự làm với thanh long đỏ, chuối, sữa chua không đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sinh tố dứa bạc hà",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Dứa", 250, "g"],
+      ["Bạc hà", 8, "g"],
+      ["Sữa chua không đường", 100, "g"],
+      ["Mật ong", 15, "g"]
+    ],
+    "steps": [
+      "Gọt dứa, bỏ mắt và lõi cứng rồi cắt nhỏ.",
+      "Rửa bạc hà, cho vào máy cùng dứa, sữa chua và 100 ml nước.",
+      "Xay mịn, thêm mật ong và dùng với đá."
+    ],
+    "servings": 2,
+    "description": "Sinh tố dứa bạc hà: đồ uống tự làm với dứa, bạc hà, sữa chua không đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Nước ép cà rốt cam",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cà rốt", 300, "g"],
+      ["Cam", 2, "quả"]
+    ],
+    "steps": [
+      "Rửa, gọt cà rốt và cắt thanh vừa máy ép.",
+      "Ép cà rốt, vắt cam riêng và bỏ hạt.",
+      "Hòa hai loại nước, làm lạnh và uống trong ngày."
+    ],
+    "servings": 2,
+    "description": "Nước ép cà rốt cam: đồ uống tự làm với cà rốt, cam. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Nước ép táo cần tây",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Táo", 2, "quả"],
+      ["Cần tây", 100, "g"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Rửa táo và cần tây, bỏ lõi táo rồi cắt vừa máy.",
+      "Ép xen kẽ táo và cần tây.",
+      "Thêm một ít nước chanh, khuấy và dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Nước ép táo cần tây: đồ uống tự làm với táo, cần tây, chanh. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Nước dưa leo chanh",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Dưa leo", 2, "quả"],
+      ["Chanh", 1, "quả"],
+      ["Đường", 20, "g"]
+    ],
+    "steps": [
+      "Rửa dưa leo, cắt nhỏ và xay cùng 300 ml nước.",
+      "Lọc qua rây nếu muốn nước trong.",
+      "Hòa đường, nước chanh đã bỏ hạt và thêm đá."
+    ],
+    "servings": 2,
+    "description": "Nước dưa leo chanh: đồ uống tự làm với dưa leo, chanh, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Nước ép dưa hấu",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Dưa hấu", 600, "g"],
+      ["Chanh", 1, "quả"],
+      ["Bạc hà", 5, "g"]
+    ],
+    "steps": [
+      "Gọt vỏ dưa hấu, bỏ hạt và cắt khối.",
+      "Ép hoặc xay dưa rồi lọc nhẹ.",
+      "Thêm một ít nước chanh, bạc hà và dùng lạnh."
+    ],
+    "servings": 2,
+    "description": "Nước ép dưa hấu: đồ uống tự làm với dưa hấu, chanh, bạc hà. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sữa bắp tại nhà",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 20,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bắp ngọt", 2, "trái"],
+      ["Sữa tươi", 300, "ml"],
+      ["Đường", 25, "g"]
+    ],
+    "steps": [
+      "Tách hạt bắp, luộc lõi với 600 ml nước 10 phút rồi bỏ lõi.",
+      "Xay hạt với nước luộc, lọc qua túi sạch.",
+      "Đun nước bắp 10 phút, khuấy liên tục; thêm sữa, đường và đun nóng lại."
+    ],
+    "servings": 2,
+    "description": "Sữa bắp tại nhà: đồ uống tự làm với bắp ngọt, sữa tươi, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sữa đậu nành lá dứa",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 20,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu nành", 150, "g"],
+      ["Lá dứa", 3, "lá"],
+      ["Đường", 30, "g"]
+    ],
+    "steps": [
+      "Ngâm đậu 8 giờ trong ngăn mát, rửa sạch.",
+      "Xay cùng 1 lít nước và lọc bỏ bã.",
+      "Đun sữa với lá dứa, giữ sôi nhẹ ít nhất 20 phút và khuấy đều, thêm đường."
+    ],
+    "servings": 2,
+    "description": "Sữa đậu nành lá dứa: đồ uống tự làm với đậu nành, lá dứa, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Cacao nóng",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 5,
+    "cook": 5,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bột cacao", 20, "g"],
+      ["Sữa tươi", 400, "ml"],
+      ["Đường", 25, "g"]
+    ],
+    "steps": [
+      "Khuấy cacao với đường và 40 ml nước nóng thành hỗn hợp mịn.",
+      "Đun sữa nóng vừa, không để trào.",
+      "Cho cacao vào sữa, khuấy đều rồi rót ra cốc."
+    ],
+    "servings": 2,
+    "description": "Cacao nóng: đồ uống tự làm với bột cacao, sữa tươi, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Cà phê sữa đá",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cà phê xay", 25, "g"],
+      ["Sữa đặc", 35, "g"]
+    ],
+    "steps": [
+      "Tráng phin bằng nước nóng, cho cà phê và nén nhẹ.",
+      "Rót 30 ml nước sôi để ủ, sau đó thêm 80 ml và chờ nhỏ giọt.",
+      "Khuấy cà phê với sữa đặc, thêm đá rồi dùng."
+    ],
+    "servings": 2,
+    "description": "Cà phê sữa đá: đồ uống tự làm với cà phê xay, sữa đặc. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Matcha latte",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bột matcha", 5, "g"],
+      ["Sữa tươi", 350, "ml"],
+      ["Mật ong", 20, "g"]
+    ],
+    "steps": [
+      "Rây matcha vào bát và thêm 60 ml nước ấm khoảng 80°C.",
+      "Đánh bằng chổi đến khi hết vón.",
+      "Hòa mật ong, thêm sữa và đá hoặc dùng nóng."
+    ],
+    "servings": 2,
+    "description": "Matcha latte: đồ uống tự làm với bột matcha, sữa tươi, mật ong. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Soda chanh dây",
+    "category": "Đồ uống",
+    "image": "cooking",
+    "prep": 10,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Chanh dây", 3, "quả"],
+      ["Nước soda", 400, "ml"],
+      ["Đường", 35, "g"]
+    ],
+    "steps": [
+      "Bổ chanh dây, lấy ruột và lọc bớt hạt.",
+      "Hòa đường với 50 ml nước nóng, để nguội rồi trộn nước cốt.",
+      "Cho đá vào ly, thêm siro chanh dây và rót soda từ từ."
+    ],
+    "servings": 2,
+    "description": "Soda chanh dây: đồ uống tự làm với chanh dây, nước soda, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh mì trứng ốp la",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bánh mì", 2, "ổ"],
+      ["Trứng gà", 4, "quả"],
+      ["Dưa leo", 1, "quả"],
+      ["Dầu ăn", 15, "ml"],
+      ["Nước tương", 10, "ml"]
+    ],
+    "steps": [
+      "Rửa dưa leo, thái lát và làm nóng bánh mì.",
+      "Đun dầu, chiên trứng đến mức chín mong muốn.",
+      "Xẻ bánh, thêm trứng, dưa leo và nước tương."
+    ],
+    "servings": 2,
+    "description": "Bánh mì trứng ốp la: bữa sáng tự làm với bánh mì, trứng gà, dưa leo. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh mì cá ngừ",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bánh mì", 2, "ổ"],
+      ["Cá ngừ đóng hộp", 150, "g"],
+      ["Mayonnaise", 30, "g"],
+      ["Xà lách", 50, "g"],
+      ["Dưa leo", 1, "quả"]
+    ],
+    "steps": [
+      "Để ráo cá ngừ, trộn với mayonnaise.",
+      "Rửa rau và dưa leo, để ráo rồi thái dưa.",
+      "Làm nóng bánh, kẹp cá và rau, dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Bánh mì cá ngừ: bữa sáng tự làm với bánh mì, cá ngừ đóng hộp, mayonnaise. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Cháo gà nấm hương",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 50,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Gạo", 150, "g"],
+      ["Thịt gà", 250, "g"],
+      ["Nấm hương", 80, "g"],
+      ["Gừng", 15, "g"],
+      ["Muối", 4, "g"]
+    ],
+    "steps": [
+      "Vo gạo; thái gừng, nấm và thịt gà.",
+      "Nấu gạo với 1,2 lít nước đến nở mềm.",
+      "Thêm gà, nấm, gừng và muối, nấu thêm 15 phút đến gà chín kỹ."
+    ],
+    "servings": 2,
+    "description": "Cháo gà nấm hương: bữa sáng tự làm với gạo, thịt gà, nấm hương. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Cháo bí đỏ thịt bằm",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 45,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Gạo", 150, "g"],
+      ["Bí đỏ", 250, "g"],
+      ["Thịt heo bằm", 200, "g"],
+      ["Nước mắm", 15, "ml"]
+    ],
+    "steps": [
+      "Vo gạo, gọt bí và cắt khối nhỏ.",
+      "Nấu gạo với 1,2 lít nước trong 25 phút rồi thêm bí.",
+      "Cho thịt bằm vào, khuấy tơi và nấu chín kỹ thêm 15 phút, nêm nước mắm."
+    ],
+    "servings": 2,
+    "description": "Cháo bí đỏ thịt bằm: bữa sáng tự làm với gạo, bí đỏ, thịt heo bằm. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Cháo yến mạch nấm",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 10,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Yến mạch", 120, "g"],
+      ["Nấm mỡ", 150, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Nước tương", 15, "ml"]
+    ],
+    "steps": [
+      "Thái nấm và băm nhỏ cà rốt.",
+      "Đun rau với 600 ml nước 8 phút.",
+      "Cho yến mạch vào nấu 5–7 phút, khuấy và nêm nước tương."
+    ],
+    "servings": 2,
+    "description": "Cháo yến mạch nấm: bữa sáng tự làm với yến mạch, nấm mỡ, cà rốt. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bún thịt xào sả",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bún tươi", 400, "g"],
+      ["Thịt heo", 250, "g"],
+      ["Sả", 2, "cây"],
+      ["Dưa leo", 1, "quả"],
+      ["Nước mắm", 20, "ml"]
+    ],
+    "steps": [
+      "Thái thịt mỏng, ướp nước mắm và sả băm 15 phút.",
+      "Xào thịt với ít dầu đến chín kỹ.",
+      "Chần bún, thêm dưa leo thái sợi và thịt xào, dùng nóng."
+    ],
+    "servings": 2,
+    "description": "Bún thịt xào sả: bữa sáng tự làm với bún tươi, thịt heo, sả. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Miến gà gừng",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 35,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Miến", 200, "g"],
+      ["Thịt gà", 300, "g"],
+      ["Gừng", 20, "g"],
+      ["Hành lá", 15, "g"],
+      ["Nước mắm", 20, "ml"]
+    ],
+    "steps": [
+      "Luộc gà với gừng trong 1 lít nước đến chín, vớt ra xé nhỏ.",
+      "Ngâm miến, cắt ngắn và nấu trong nước gà đến mềm.",
+      "Nêm nước mắm, thêm gà và hành lá, dùng nóng."
+    ],
+    "servings": 2,
+    "description": "Miến gà gừng: bữa sáng tự làm với miến, thịt gà, gừng. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Nui xào trứng",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Nui", 250, "g"],
+      ["Trứng gà", 3, "quả"],
+      ["Cà rốt", 1, "củ"],
+      ["Hành lá", 15, "g"],
+      ["Nước tương", 20, "ml"]
+    ],
+    "steps": [
+      "Luộc nui theo bao bì rồi để ráo; cắt nhỏ cà rốt.",
+      "Xào cà rốt với ít dầu, thêm trứng đánh tan và đảo tơi.",
+      "Cho nui vào đảo nóng, nêm nước tương và thêm hành lá."
+    ],
+    "servings": 2,
+    "description": "Nui xào trứng: bữa sáng tự làm với nui, trứng gà, cà rốt. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Mì trứng rau cải",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mì trứng", 250, "g"],
+      ["Cải thìa", 200, "g"],
+      ["Trứng gà", 2, "quả"],
+      ["Nước tương", 20, "ml"],
+      ["Dầu mè", 10, "ml"]
+    ],
+    "steps": [
+      "Luộc trứng chín và bóc vỏ; rửa cải.",
+      "Nấu mì với 800 ml nước, thêm cải khi mì gần mềm.",
+      "Nêm nước tương, dầu mè, chia tô và đặt trứng lên trên."
+    ],
+    "servings": 2,
+    "description": "Mì trứng rau cải: bữa sáng tự làm với mì trứng, cải thìa, trứng gà. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Xôi đậu xanh",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 40,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Gạo nếp", 400, "g"],
+      ["Đậu xanh cà vỏ", 150, "g"],
+      ["Muối", 3, "g"],
+      ["Dầu ăn", 15, "ml"]
+    ],
+    "steps": [
+      "Ngâm nếp và đậu riêng 6 giờ, để ráo.",
+      "Trộn nếp, đậu với muối và dầu.",
+      "Hấp 35–40 phút, xới giữa chừng đến khi hạt nếp chín mềm."
+    ],
+    "servings": 2,
+    "description": "Xôi đậu xanh: bữa sáng tự làm với gạo nếp, đậu xanh cà vỏ, muối. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Xôi bắp",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 20,
+    "cook": 40,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Gạo nếp", 350, "g"],
+      ["Bắp ngọt", 200, "g"],
+      ["Đậu xanh cà vỏ", 100, "g"],
+      ["Muối", 3, "g"]
+    ],
+    "steps": [
+      "Ngâm nếp và đậu riêng 6 giờ rồi để ráo.",
+      "Hấp đậu chín, nghiền sơ; trộn nếp cùng hạt bắp và muối.",
+      "Hấp nếp bắp 35–40 phút, rắc đậu xanh trước khi dùng."
+    ],
+    "servings": 2,
+    "description": "Xôi bắp: bữa sáng tự làm với gạo nếp, bắp ngọt, đậu xanh cà vỏ. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Pancake chuối yến mạch",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 20,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Chuối", 2, "quả"],
+      ["Yến mạch", 150, "g"],
+      ["Trứng gà", 2, "quả"],
+      ["Sữa tươi", 100, "ml"],
+      ["Dầu ăn", 10, "ml"]
+    ],
+    "steps": [
+      "Xay yến mạch thành bột, nghiền chuối.",
+      "Trộn bột với chuối, trứng và sữa, nghỉ 10 phút.",
+      "Quét dầu lên chảo, đổ từng bánh nhỏ và rán hai mặt đến chín."
+    ],
+    "servings": 2,
+    "description": "Pancake chuối yến mạch: bữa sáng tự làm với chuối, yến mạch, trứng gà. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "French toast quế",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 10,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bánh mì sandwich", 6, "lát"],
+      ["Trứng gà", 2, "quả"],
+      ["Sữa tươi", 150, "ml"],
+      ["Bột quế", 2, "g"],
+      ["Bơ lạt", 20, "g"]
+    ],
+    "steps": [
+      "Đánh trứng, sữa và quế trong đĩa sâu.",
+      "Nhúng nhanh từng lát bánh để ngấm đều hai mặt.",
+      "Áp chảo với bơ ở lửa vừa đến vàng và phần trứng chín."
+    ],
+    "servings": 2,
+    "description": "French toast quế: bữa sáng tự làm với bánh mì sandwich, trứng gà, sữa tươi. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh cuốn trứng",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bột bánh cuốn", 200, "g"],
+      ["Trứng gà", 3, "quả"],
+      ["Hành lá", 15, "g"],
+      ["Dầu ăn", 15, "ml"],
+      ["Nước mắm", 20, "ml"]
+    ],
+    "steps": [
+      "Pha bột theo tỷ lệ nước trên bao bì, để nghỉ 20 phút.",
+      "Tráng bột mỏng trên chảo chống dính đã quét dầu, đậy nắp đến bột trong.",
+      "Thêm lớp trứng đánh tan, đậy đến chín rồi cuộn, rắc hành và dùng với nước mắm pha."
+    ],
+    "servings": 2,
+    "description": "Bánh cuốn trứng: bữa sáng tự làm với bột bánh cuốn, trứng gà, hành lá. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sandwich bơ trứng luộc",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 10,
+    "cook": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bánh mì sandwich", 4, "lát"],
+      ["Bơ", 1, "quả"],
+      ["Trứng gà", 2, "quả"],
+      ["Chanh", 1, "quả"],
+      ["Muối", 2, "g"]
+    ],
+    "steps": [
+      "Luộc trứng chín, bóc vỏ và thái lát.",
+      "Nghiền bơ với ít nước chanh và muối.",
+      "Nướng bánh, phết bơ rồi xếp trứng lên, dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Sandwich bơ trứng luộc: bữa sáng tự làm với bánh mì sandwich, bơ, trứng gà. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Khoai lang trứng nướng",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 10,
+    "cook": 55,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Khoai lang", 2, "củ"],
+      ["Trứng gà", 2, "quả"],
+      ["Phô mai mozzarella", 40, "g"],
+      ["Muối", 2, "g"]
+    ],
+    "steps": [
+      "Nướng khoai 200°C khoảng 40 phút đến mềm.",
+      "Xẻ khoai, khoét một ít ruột rồi đập trứng vào, thêm muối.",
+      "Rắc phô mai và nướng tiếp 12–15 phút đến trứng chín."
+    ],
+    "servings": 2,
+    "description": "Khoai lang trứng nướng: bữa sáng tự làm với khoai lang, trứng gà, phô mai mozzarella. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Cơm nắm rong biển",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cơm chín", 400, "g"],
+      ["Rong biển khô", 5, "g"],
+      ["Mè rang", 15, "g"],
+      ["Dầu mè", 10, "ml"],
+      ["Muối", 2, "g"]
+    ],
+    "steps": [
+      "Để cơm nguội bớt đến còn ấm.",
+      "Trộn cơm với dầu mè, muối và mè rang.",
+      "Làm ẩm tay sạch, nắm cơm thành viên và bọc rong biển, dùng ngay."
+    ],
+    "servings": 2,
+    "description": "Cơm nắm rong biển: bữa sáng tự làm với cơm chín, rong biển khô, mè rang. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh mì nấm phô mai",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bánh mì", 2, "ổ"],
+      ["Nấm mỡ", 200, "g"],
+      ["Phô mai mozzarella", 60, "g"],
+      ["Tỏi", 2, "tép"],
+      ["Bơ lạt", 15, "g"]
+    ],
+    "steps": [
+      "Thái nấm, băm tỏi và xào với bơ đến nấm chín, ráo nước.",
+      "Xẻ bánh, xếp nấm và phô mai.",
+      "Nướng 180°C trong 7–10 phút đến phô mai tan."
+    ],
+    "servings": 2,
+    "description": "Bánh mì nấm phô mai: bữa sáng tự làm với bánh mì, nấm mỡ, phô mai mozzarella. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bún mọc cà chua",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 15,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bún tươi", 400, "g"],
+      ["Giò sống", 250, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Hành lá", 15, "g"],
+      ["Nước mắm", 20, "ml"]
+    ],
+    "steps": [
+      "Cắt cà chua, xào sơ rồi thêm 1 lít nước.",
+      "Vo giò sống thành viên nhỏ, thả vào nước sôi và nấu đến chín kỹ.",
+      "Nêm nước mắm, chần bún rồi chan nước, thêm mọc và hành."
+    ],
+    "servings": 2,
+    "description": "Bún mọc cà chua: bữa sáng tự làm với bún tươi, giò sống, cà chua. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Yến mạch táo quế nóng",
+    "category": "Bữa sáng",
+    "image": "hero",
+    "prep": 10,
+    "cook": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Yến mạch", 120, "g"],
+      ["Táo", 1, "quả"],
+      ["Sữa tươi", 400, "ml"],
+      ["Bột quế", 2, "g"],
+      ["Mật ong", 20, "g"]
+    ],
+    "steps": [
+      "Rửa táo, bỏ lõi và cắt hạt lựu.",
+      "Đun sữa với yến mạch, táo và quế ở lửa nhỏ 7–10 phút.",
+      "Khuấy đều đến mềm, tắt bếp rồi thêm mật ong."
+    ],
+    "servings": 2,
+    "description": "Yến mạch táo quế nóng: bữa sáng tự làm với yến mạch, táo, sữa tươi. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Đậu hũ kho nấm",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu hũ", 400, "g"],
+      ["Nấm hương", 150, "g"],
+      ["Nước tương", 30, "ml"],
+      ["Đường", 10, "g"],
+      ["Dầu ăn", 15, "ml"]
+    ],
+    "steps": [
+      "Cắt đậu thành khối, thấm khô và chiên vàng.",
+      "Cho nấm đã làm sạch, nước tương, đường và 150 ml nước vào nồi.",
+      "Thêm đậu, kho lửa nhỏ 15 phút đến ngấm sốt."
+    ],
+    "servings": 4,
+    "description": "Đậu hũ kho nấm: món chay tự làm với đậu hũ, nấm hương, nước tương. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cà tím om tương",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cà tím", 3, "quả"],
+      ["Tương hột", 60, "g"],
+      ["Sả", 2, "cây"],
+      ["Dầu ăn", 20, "ml"]
+    ],
+    "steps": [
+      "Cắt cà tím, ngâm nước muối loãng 10 phút rồi để ráo.",
+      "Phi sả băm với dầu, thêm cà tím đảo đều.",
+      "Cho tương hột và 150 ml nước, đậy nắp om 12–15 phút đến mềm."
+    ],
+    "servings": 4,
+    "description": "Cà tím om tương: món chay tự làm với cà tím, tương hột, sả. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Nấm đùi gà áp chảo",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Nấm đùi gà", 400, "g"],
+      ["Nước tương", 25, "ml"],
+      ["Dầu mè", 10, "ml"],
+      ["Tỏi", 3, "tép"]
+    ],
+    "steps": [
+      "Lau sạch nấm, cắt lát dày và khía nhẹ bề mặt.",
+      "Áp chảo nấm với dầu mè đến vàng hai mặt.",
+      "Thêm tỏi băm, nước tương và 30 ml nước, rim đến nấm chín và sốt sánh."
+    ],
+    "servings": 4,
+    "description": "Nấm đùi gà áp chảo: món chay tự làm với nấm đùi gà, nước tương, dầu mè. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Canh chua chay",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu hũ", 300, "g"],
+      ["Dứa", 150, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Đậu bắp", 100, "g"],
+      ["Nước cốt me", 30, "ml"]
+    ],
+    "steps": [
+      "Cắt đậu, dứa, cà chua và đậu bắp thành miếng.",
+      "Đun 1 lít nước với me, dứa và cà chua trong 5 phút.",
+      "Thêm đậu và đậu bắp, nấu chín, nêm muối theo khẩu vị."
+    ],
+    "servings": 4,
+    "description": "Canh chua chay: món chay tự làm với đậu hũ, dứa, cà chua. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Canh bí đỏ đậu phộng",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 40,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bí đỏ", 500, "g"],
+      ["Đậu phộng", 100, "g"],
+      ["Muối", 4, "g"],
+      ["Hành lá", 15, "g"]
+    ],
+    "steps": [
+      "Ngâm đậu phộng 2 giờ, giã dập; gọt bí và cắt khối.",
+      "Ninh đậu với 1 lít nước 25 phút.",
+      "Thêm bí, nấu mềm khoảng 15 phút, nêm muối và rắc hành."
+    ],
+    "servings": 4,
+    "description": "Canh bí đỏ đậu phộng: món chay tự làm với bí đỏ, đậu phộng, muối. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Bông cải xào hạt điều",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bông cải xanh", 300, "g"],
+      ["Hạt điều rang", 60, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Nước tương", 20, "ml"],
+      ["Dầu ăn", 15, "ml"]
+    ],
+    "steps": [
+      "Cắt bông cải, thái cà rốt và chần nhanh 2 phút.",
+      "Làm nóng dầu, xào rau với nước tương và 30 ml nước.",
+      "Khi rau chín vừa, thêm hạt điều, đảo nhanh rồi tắt bếp."
+    ],
+    "servings": 4,
+    "description": "Bông cải xào hạt điều: món chay tự làm với bông cải xanh, hạt điều rang, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Miến xào nấm rau củ",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Miến", 200, "g"],
+      ["Nấm mỡ", 150, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Bắp cải", 150, "g"],
+      ["Nước tương", 25, "ml"]
+    ],
+    "steps": [
+      "Ngâm miến đến mềm, cắt ngắn; thái sợi rau và nấm.",
+      "Xào nấm cùng rau với ít dầu đến chín.",
+      "Cho miến, nước tương và 50 ml nước vào đảo đến miến mềm, ráo."
+    ],
+    "servings": 4,
+    "description": "Miến xào nấm rau củ: món chay tự làm với miến, nấm mỡ, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cơm chiên dứa chay",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cơm chín", 500, "g"],
+      ["Dứa", 150, "g"],
+      ["Đậu Hà Lan", 100, "g"],
+      ["Hạt điều rang", 40, "g"],
+      ["Nước tương", 25, "ml"]
+    ],
+    "steps": [
+      "Cắt dứa thành khối, để ráo; chần đậu Hà Lan chín.",
+      "Làm nóng chảo với ít dầu, đảo cơm tơi cùng đậu.",
+      "Thêm dứa, nước tương và hạt điều, chiên nhanh cho nóng đều."
+    ],
+    "servings": 4,
+    "description": "Cơm chiên dứa chay: món chay tự làm với cơm chín, dứa, đậu hà lan. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cà ri đậu gà",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 30,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu gà chín", 300, "g"],
+      ["Khoai tây", 250, "g"],
+      ["Nước cốt dừa", 250, "ml"],
+      ["Bột cà ri", 15, "g"],
+      ["Cà rốt", 1, "củ"]
+    ],
+    "steps": [
+      "Gọt khoai và cà rốt, cắt khối vừa ăn.",
+      "Xào bột cà ri với ít dầu rồi thêm rau, nước cốt dừa và 250 ml nước.",
+      "Nấu 15 phút, thêm đậu gà và ninh đến rau mềm, nêm muối."
+    ],
+    "servings": 4,
+    "description": "Cà ri đậu gà: món chay tự làm với đậu gà chín, khoai tây, nước cốt dừa. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Đậu hũ sốt tiêu đen",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu hũ", 400, "g"],
+      ["Ớt chuông", 1, "quả"],
+      ["Nước tương", 25, "ml"],
+      ["Tiêu đen", 4, "g"],
+      ["Bột bắp", 10, "g"]
+    ],
+    "steps": [
+      "Cắt và chiên đậu vàng; thái ớt chuông.",
+      "Đun nước tương, tiêu và 150 ml nước, thêm đậu và ớt nấu 5 phút.",
+      "Hòa bột bắp với 20 ml nước, cho vào sốt và khuấy đến sánh."
+    ],
+    "servings": 4,
+    "description": "Đậu hũ sốt tiêu đen: món chay tự làm với đậu hũ, ớt chuông, nước tương. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Bắp cải cuộn nấm",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bắp cải", 1, "cái"],
+      ["Nấm hương", 150, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Đậu hũ", 200, "g"],
+      ["Nước tương", 20, "ml"]
+    ],
+    "steps": [
+      "Tách lá bắp cải, chần mềm; băm nấm, cà rốt và nghiền đậu.",
+      "Trộn nhân với nước tương, cuốn trong từng lá bắp cải.",
+      "Xếp xửng và hấp 15–20 phút đến nhân chín."
+    ],
+    "servings": 4,
+    "description": "Bắp cải cuộn nấm: món chay tự làm với bắp cải, nấm hương, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Mì udon xào rau củ",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mì udon", 400, "g"],
+      ["Cải thìa", 200, "g"],
+      ["Nấm đùi gà", 150, "g"],
+      ["Nước tương", 25, "ml"],
+      ["Dầu mè", 10, "ml"]
+    ],
+    "steps": [
+      "Chần mì theo bao bì, để ráo; thái nấm và rau.",
+      "Xào nấm với dầu mè đến chín, thêm cải thìa.",
+      "Cho mì và nước tương vào đảo 3 phút, dùng nóng."
+    ],
+    "servings": 4,
+    "description": "Mì udon xào rau củ: món chay tự làm với mì udon, cải thìa, nấm đùi gà. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Khoai tây đút lò thảo mộc",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 40,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Khoai tây", 600, "g"],
+      ["Dầu ô liu", 30, "ml"],
+      ["Hương thảo", 5, "g"],
+      ["Tỏi", 4, "tép"],
+      ["Muối", 4, "g"]
+    ],
+    "steps": [
+      "Rửa khoai và cắt múi, luộc sơ 5 phút rồi để ráo.",
+      "Trộn khoai với dầu, hương thảo, tỏi băm và muối.",
+      "Nướng 210°C khoảng 30–35 phút, trở giữa chừng đến vàng mềm."
+    ],
+    "servings": 4,
+    "description": "Khoai tây đút lò thảo mộc: món chay tự làm với khoai tây, dầu ô liu, hương thảo. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Đậu que xào mè",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu que", 400, "g"],
+      ["Mè rang", 25, "g"],
+      ["Tỏi", 3, "tép"],
+      ["Nước tương", 20, "ml"],
+      ["Dầu ăn", 15, "ml"]
+    ],
+    "steps": [
+      "Tước xơ đậu, cắt khúc và chần 3 phút.",
+      "Phi tỏi với dầu, thêm đậu cùng nước tương và ít nước.",
+      "Xào đến đậu chín hoàn toàn, rắc mè và đảo đều."
+    ],
+    "servings": 4,
+    "description": "Đậu que xào mè: món chay tự làm với đậu que, mè rang, tỏi. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Nấm kho gừng",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Nấm rơm", 400, "g"],
+      ["Gừng", 25, "g"],
+      ["Nước tương", 30, "ml"],
+      ["Đường", 10, "g"],
+      ["Dầu ăn", 15, "ml"]
+    ],
+    "steps": [
+      "Làm sạch nấm, cắt đôi; gừng thái sợi.",
+      "Phi gừng với dầu, cho nấm vào đảo săn.",
+      "Thêm nước tương, đường và 100 ml nước, kho 12–15 phút."
+    ],
+    "servings": 4,
+    "description": "Nấm kho gừng: món chay tự làm với nấm rơm, gừng, nước tương. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Bún xào chay",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bún khô", 250, "g"],
+      ["Đậu hũ", 200, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Giá đỗ", 150, "g"],
+      ["Nước tương", 25, "ml"]
+    ],
+    "steps": [
+      "Ngâm và luộc bún theo bao bì; cắt đậu chiên thành sợi.",
+      "Xào cà rốt cùng giá đến chín với ít dầu.",
+      "Thêm bún, đậu và nước tương, đảo đều đến nóng, không xào quá lâu."
+    ],
+    "servings": 4,
+    "description": "Bún xào chay: món chay tự làm với bún khô, đậu hũ, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Canh rong biển đậu hũ",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Rong biển khô", 10, "g"],
+      ["Đậu hũ", 300, "g"],
+      ["Nấm kim châm", 150, "g"],
+      ["Muối", 4, "g"],
+      ["Dầu mè", 5, "ml"]
+    ],
+    "steps": [
+      "Ngâm rong biển theo bao bì, rửa sạch; cắt đậu và nấm.",
+      "Đun 800 ml nước, cho rong biển và đậu vào nấu 5 phút.",
+      "Thêm nấm, nấu chín rồi nêm muối và dầu mè."
+    ],
+    "servings": 4,
+    "description": "Canh rong biển đậu hũ: món chay tự làm với rong biển khô, đậu hũ, nấm kim châm. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Bí ngòi nhồi rau củ",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bí ngòi", 3, "quả"],
+      ["Nấm mỡ", 150, "g"],
+      ["Cà rốt", 1, "củ"],
+      ["Đậu hũ", 200, "g"],
+      ["Nước tương", 20, "ml"]
+    ],
+    "steps": [
+      "Bổ dọc bí và khoét ruột; băm nấm, cà rốt, ruột bí.",
+      "Trộn rau băm với đậu nghiền và nước tương.",
+      "Nhồi vào bí, hấp 20 phút đến bí và nhân chín mềm."
+    ],
+    "servings": 4,
+    "description": "Bí ngòi nhồi rau củ: món chay tự làm với bí ngòi, nấm mỡ, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Đậu hũ hấp gừng hành",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 10,
+    "cook": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu hũ non", 400, "g"],
+      ["Gừng", 20, "g"],
+      ["Hành lá", 20, "g"],
+      ["Nước tương", 25, "ml"],
+      ["Dầu mè", 10, "ml"]
+    ],
+    "steps": [
+      "Để đậu ráo nhẹ rồi đặt vào đĩa sâu.",
+      "Rải gừng thái sợi, hấp 10 phút đến nóng kỹ.",
+      "Thêm hành thái nhỏ, nước tương và dầu mè trước khi dùng."
+    ],
+    "servings": 4,
+    "description": "Đậu hũ hấp gừng hành: món chay tự làm với đậu hũ non, gừng, hành lá. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Súp đậu lăng cà chua",
+    "category": "Món chay",
+    "image": "pasta",
+    "prep": 15,
+    "cook": 35,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu lăng", 200, "g"],
+      ["Cà chua", 3, "quả"],
+      ["Cà rốt", 1, "củ"],
+      ["Hành tây", 1, "củ"],
+      ["Dầu ô liu", 20, "ml"]
+    ],
+    "steps": [
+      "Băm hành, cắt cà chua và cà rốt; rửa đậu.",
+      "Xào hành với dầu, thêm rau và đậu, đổ 1 lít nước.",
+      "Nấu lửa nhỏ 25–30 phút đến đậu mềm, nêm muối và dùng nóng."
+    ],
+    "servings": 4,
+    "description": "Súp đậu lăng cà chua: món chay tự làm với đậu lăng, cà chua, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Thịt kho trứng",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 25,
+    "cook": 75,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt ba chỉ", 600, "g"],
+      ["Trứng gà", 4, "quả"],
+      ["Nước dừa", 400, "ml"],
+      ["Nước mắm", 30, "ml"],
+      ["Đường", 20, "g"]
+    ],
+    "steps": [
+      "Luộc trứng chín, bóc vỏ; cắt thịt thành miếng.",
+      "Thắng đường với chút nước thành màu cánh gián, cho thịt và nước mắm vào đảo.",
+      "Thêm nước dừa và trứng, kho nhỏ lửa 45–60 phút đến thịt mềm."
+    ],
+    "servings": 4,
+    "description": "Thịt kho trứng: món chính tự làm với thịt ba chỉ, trứng gà, nước dừa. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cá thu sốt cà chua",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cá thu", 500, "g"],
+      ["Cà chua", 4, "quả"],
+      ["Hành tím", 2, "củ"],
+      ["Nước mắm", 20, "ml"],
+      ["Dầu ăn", 20, "ml"]
+    ],
+    "steps": [
+      "Thấm khô cá, chiên vàng hai mặt.",
+      "Phi hành, thêm cà chua băm và 150 ml nước, nấu thành sốt.",
+      "Cho cá và nước mắm vào rim 12–15 phút đến cá chín kỹ."
+    ],
+    "servings": 4,
+    "description": "Cá thu sốt cà chua: món chính tự làm với cá thu, cà chua, hành tím. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Tôm rim nước dừa",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 15,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Tôm", 500, "g"],
+      ["Nước dừa", 200, "ml"],
+      ["Nước mắm", 20, "ml"],
+      ["Đường", 15, "g"],
+      ["Tỏi", 3, "tép"]
+    ],
+    "steps": [
+      "Làm sạch tôm và bỏ chỉ lưng, băm tỏi.",
+      "Phi tỏi với ít dầu, cho tôm vào đảo săn.",
+      "Thêm nước dừa, nước mắm và đường, rim đến tôm chín và sốt sệt."
+    ],
+    "servings": 4,
+    "description": "Tôm rim nước dừa: món chính tự làm với tôm, nước dừa, nước mắm. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Bò xào bông cải",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt bò", 400, "g"],
+      ["Bông cải xanh", 300, "g"],
+      ["Tỏi", 4, "tép"],
+      ["Nước tương", 25, "ml"],
+      ["Dầu ăn", 20, "ml"]
+    ],
+    "steps": [
+      "Thái bò ngang thớ, ướp nửa lượng nước tương; chần bông cải.",
+      "Phi nửa tỏi, xào bò chín rồi trút riêng.",
+      "Xào bông cải với tỏi còn lại, thêm bò và nước tương, đảo nóng đều."
+    ],
+    "servings": 4,
+    "description": "Bò xào bông cải: món chính tự làm với thịt bò, bông cải xanh, tỏi. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Gà kho gừng",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 30,
+    "cook": 35,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt gà", 700, "g"],
+      ["Gừng", 40, "g"],
+      ["Nước mắm", 30, "ml"],
+      ["Đường", 15, "g"],
+      ["Dầu ăn", 15, "ml"]
+    ],
+    "steps": [
+      "Chặt gà vừa ăn, ướp nước mắm và đường 20 phút.",
+      "Thái gừng thành sợi, phi với dầu rồi cho gà vào đảo săn.",
+      "Thêm 200 ml nước, kho 25–30 phút đến gà chín kỹ, sốt sánh."
+    ],
+    "servings": 4,
+    "description": "Gà kho gừng: món chính tự làm với thịt gà, gừng, nước mắm. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Sườn xào chua ngọt",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 45,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Sườn heo", 600, "g"],
+      ["Cà chua", 2, "quả"],
+      ["Giấm gạo", 30, "ml"],
+      ["Đường", 25, "g"],
+      ["Nước mắm", 25, "ml"]
+    ],
+    "steps": [
+      "Chần sườn, rửa lại và ninh 20 phút rồi để ráo.",
+      "Chiên sườn hơi vàng, thêm cà chua băm xào mềm.",
+      "Cho giấm, đường, nước mắm và 100 ml nước, rim đến sườn mềm."
+    ],
+    "servings": 4,
+    "description": "Sườn xào chua ngọt: món chính tự làm với sườn heo, cà chua, giấm gạo. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cá hồi áp chảo chanh bơ",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 15,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cá hồi", 500, "g"],
+      ["Bơ lạt", 30, "g"],
+      ["Chanh", 1, "quả"],
+      ["Tỏi", 3, "tép"],
+      ["Muối", 3, "g"]
+    ],
+    "steps": [
+      "Thấm khô cá, rắc muối và làm nóng chảo.",
+      "Áp chảo cá với bơ, trở nhẹ đến phần giữa chín đục.",
+      "Thêm tỏi băm cùng nước chanh, rưới sốt bơ lên cá rồi dùng."
+    ],
+    "servings": 4,
+    "description": "Cá hồi áp chảo chanh bơ: món chính tự làm với cá hồi, bơ lạt, chanh. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Mực xào cần tây",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 15,
+    "cook": 15,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mực", 500, "g"],
+      ["Cần tây", 150, "g"],
+      ["Hành tây", 1, "củ"],
+      ["Tỏi", 3, "tép"],
+      ["Nước mắm", 20, "ml"]
+    ],
+    "steps": [
+      "Làm sạch mực, bỏ túi mực và thái miếng; cắt rau.",
+      "Phi tỏi với ít dầu, xào mực đến săn.",
+      "Thêm cần tây, hành tây, nước mắm và đảo đến mực chín hoàn toàn."
+    ],
+    "servings": 4,
+    "description": "Mực xào cần tây: món chính tự làm với mực, cần tây, hành tây. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Canh sườn khoai tây",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 55,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Sườn heo", 500, "g"],
+      ["Khoai tây", 300, "g"],
+      ["Cà rốt", 2, "củ"],
+      ["Hành lá", 15, "g"],
+      ["Muối", 5, "g"]
+    ],
+    "steps": [
+      "Chần sườn, rửa sạch rồi ninh với 1,5 lít nước 30 phút.",
+      "Gọt khoai, cà rốt và cắt khối, thêm vào nồi.",
+      "Nấu đến rau mềm và sườn chín, nêm muối, rắc hành lá."
+    ],
+    "servings": 4,
+    "description": "Canh sườn khoai tây: món chính tự làm với sườn heo, khoai tây, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cơm gà nghệ",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 50,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Gạo", 300, "g"],
+      ["Thịt gà", 600, "g"],
+      ["Bột nghệ", 5, "g"],
+      ["Gừng", 20, "g"],
+      ["Muối", 4, "g"]
+    ],
+    "steps": [
+      "Luộc gà với gừng và muối đến chín kỹ, giữ lại nước luộc.",
+      "Vo gạo, trộn nghệ rồi nấu bằng lượng nước gà phù hợp với loại gạo.",
+      "Xé gà, xới cơm và dùng cùng rau rửa sạch."
+    ],
+    "servings": 4,
+    "description": "Cơm gà nghệ: món chính tự làm với gạo, thịt gà, bột nghệ. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cơm chiên hải sản",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cơm chín", 600, "g"],
+      ["Tôm", 200, "g"],
+      ["Mực", 200, "g"],
+      ["Trứng gà", 2, "quả"],
+      ["Nước tương", 25, "ml"]
+    ],
+    "steps": [
+      "Làm sạch tôm mực, cắt nhỏ và xào chín riêng.",
+      "Đánh trứng, cho vào chảo dầu nóng đảo tơi.",
+      "Thêm cơm, chiên tơi rồi cho hải sản và nước tương vào đảo nóng kỹ."
+    ],
+    "servings": 4,
+    "description": "Cơm chiên hải sản: món chính tự làm với cơm chín, tôm, mực. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Mì Ý bò bằm",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 30,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Mì Ý", 300, "g"],
+      ["Thịt bò bằm", 300, "g"],
+      ["Cà chua", 5, "quả"],
+      ["Hành tây", 1, "củ"],
+      ["Dầu ô liu", 20, "ml"]
+    ],
+    "steps": [
+      "Luộc mì theo bao bì; băm hành và cà chua.",
+      "Xào hành với dầu, cho bò vào đảo đến chín rồi thêm cà chua.",
+      "Nấu sốt 20 phút, nêm muối, cho mì vào đảo đều."
+    ],
+    "servings": 4,
+    "description": "Mì Ý bò bằm: món chính tự làm với mì ý, thịt bò bằm, cà chua. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Bún cá thì là",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Bún tươi", 500, "g"],
+      ["Cá phi lê", 400, "g"],
+      ["Cà chua", 3, "quả"],
+      ["Thì là", 20, "g"],
+      ["Nước mắm", 25, "ml"]
+    ],
+    "steps": [
+      "Cắt cá, loại hết xương; rửa và cắt cà chua, thì là.",
+      "Xào cà chua với ít dầu, thêm 1,2 lít nước rồi nấu cá chín kỹ.",
+      "Nêm nước mắm, chần bún và chan canh cá, rắc thì là."
+    ],
+    "servings": 4,
+    "description": "Bún cá thì là: món chính tự làm với bún tươi, cá phi lê, cà chua. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Thịt viên sốt nấm",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 25,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt heo bằm", 400, "g"],
+      ["Nấm mỡ", 200, "g"],
+      ["Hành tây", 1, "củ"],
+      ["Nước tương", 25, "ml"],
+      ["Bột bắp", 10, "g"]
+    ],
+    "steps": [
+      "Trộn thịt với nửa hành băm và chút muối, vo viên.",
+      "Áp chảo viên thịt, thêm nấm, hành còn lại, nước tương và 200 ml nước.",
+      "Nấu 15 phút đến viên thịt chín giữa, thêm bột bắp hòa nước để tạo độ sánh."
+    ],
+    "servings": 4,
+    "description": "Thịt viên sốt nấm: món chính tự làm với thịt heo bằm, nấm mỡ, hành tây. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Gà hấp sả",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 45,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt gà", 800, "g"],
+      ["Sả", 5, "cây"],
+      ["Gừng", 30, "g"],
+      ["Muối", 5, "g"],
+      ["Chanh", 1, "quả"]
+    ],
+    "steps": [
+      "Làm sạch gà, thấm khô và xoa muối.",
+      "Lót sả đập dập cùng gừng trong xửng, đặt gà lên.",
+      "Hấp 35–45 phút đến thịt chín kỹ, phần dày nhất đạt 74°C, dùng với chanh."
+    ],
+    "servings": 4,
+    "description": "Gà hấp sả: món chính tự làm với thịt gà, sả, gừng. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Cá rô phi nướng sả",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 35,
+    "cook": 35,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Cá rô phi", 800, "g"],
+      ["Sả", 3, "cây"],
+      ["Tỏi", 4, "tép"],
+      ["Nước mắm", 25, "ml"],
+      ["Dầu ăn", 20, "ml"]
+    ],
+    "steps": [
+      "Làm sạch cá, khía hai bên và thấm khô.",
+      "Ướp cá với sả, tỏi băm, nước mắm và dầu 20 phút.",
+      "Nướng 200°C khoảng 30–35 phút, trở giữa chừng đến cá chín kỹ."
+    ],
+    "servings": 4,
+    "description": "Cá rô phi nướng sả: món chính tự làm với cá rô phi, sả, tỏi. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Bò hầm khoai tây",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 20,
+    "cook": 90,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Thịt bò", 600, "g"],
+      ["Khoai tây", 400, "g"],
+      ["Cà rốt", 2, "củ"],
+      ["Hành tây", 1, "củ"],
+      ["Muối", 5, "g"]
+    ],
+    "steps": [
+      "Cắt thịt bò và rau thành khối.",
+      "Xào thịt với hành và ít dầu, thêm 1,2 lít nước, hầm 60 phút.",
+      "Cho khoai và cà rốt, hầm thêm 25 phút đến thịt rau mềm, nêm muối."
+    ],
+    "servings": 4,
+    "description": "Bò hầm khoai tây: món chính tự làm với thịt bò, khoai tây, cà rốt. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Tôm hấp sả",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 15,
+    "cook": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Tôm", 600, "g"],
+      ["Sả", 4, "cây"],
+      ["Gừng", 20, "g"],
+      ["Muối", 3, "g"]
+    ],
+    "steps": [
+      "Rửa tôm, bỏ chỉ lưng; đập dập sả và thái gừng.",
+      "Lót sả gừng vào xửng rồi xếp tôm, rắc muối.",
+      "Hấp 8–12 phút tùy cỡ đến tôm chín đục hoàn toàn, dùng nóng."
+    ],
+    "servings": 4,
+    "description": "Tôm hấp sả: món chính tự làm với tôm, sả, gừng. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Trứng hấp thịt nấm",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 15,
+    "cook": 30,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Trứng gà", 4, "quả"],
+      ["Thịt heo bằm", 200, "g"],
+      ["Nấm hương", 80, "g"],
+      ["Nước mắm", 15, "ml"],
+      ["Hành lá", 15, "g"]
+    ],
+    "steps": [
+      "Băm nấm, thái hành và đánh trứng với nước mắm.",
+      "Trộn trứng cùng thịt, nấm và 100 ml nước, cho vào bát chịu nhiệt.",
+      "Hấp 25–30 phút đến giữa bát đông hoàn toàn và thịt chín kỹ."
+    ],
+    "servings": 4,
+    "description": "Trứng hấp thịt nấm: món chính tự làm với trứng gà, thịt heo bằm, nấm hương. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Đậu hũ nhồi thịt sốt cà",
+    "category": "Món chính",
+    "image": "chicken",
+    "prep": 25,
+    "cook": 30,
+    "difficulty": "easy",
+    "ingredients": [
+      ["Đậu hũ", 500, "g"],
+      ["Thịt heo bằm", 250, "g"],
+      ["Cà chua", 4, "quả"],
+      ["Hành tím", 2, "củ"],
+      ["Nước mắm", 25, "ml"]
+    ],
+    "steps": [
+      "Khoét nhẹ đậu, trộn ruột đậu với thịt và hành băm rồi nhồi lại.",
+      "Áp chảo đậu cho vàng mặt, để riêng.",
+      "Xào cà chua, thêm 200 ml nước và nước mắm, cho đậu vào om 20 phút đến nhân chín kỹ."
+    ],
+    "servings": 4,
+    "description": "Đậu hũ nhồi thịt sốt cà: món chính tự làm với đậu hũ, thịt heo bằm, cà chua. Xem định lượng và làm theo từng bước bên dưới."
+  },
+  {
+    "title": "Chè đậu xanh nước cốt dừa",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 35,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Đậu xanh cà vỏ", 200, "g"],
+      ["Đường", 80, "g"],
+      ["Nước cốt dừa", 150, "ml"],
+      ["Muối", 1, "g"]
+    ],
+    "steps": [
+      "Ngâm đậu 2 giờ, rửa và nấu với 800 ml nước đến mềm.",
+      "Thêm đường và muối, khuấy nhẹ 5 phút.",
+      "Múc chè ra bát, rưới nước cốt dừa đã đun nóng."
+    ],
+    "servings": 4,
+    "description": "Chè đậu xanh nước cốt dừa: tráng miệng tự làm với đậu xanh cà vỏ, đường, nước cốt dừa. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Chè đậu đen",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 100,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Đậu đen", 200, "g"],
+      ["Đường", 100, "g"],
+      ["Nước cốt dừa", 150, "ml"]
+    ],
+    "steps": [
+      "Ngâm đậu 8 giờ trong ngăn mát, rửa sạch.",
+      "Ninh với 1,2 lít nước đến đậu mềm, khoảng 60–90 phút.",
+      "Thêm đường, nấu thêm 10 phút rồi dùng với cốt dừa đun nóng."
+    ],
+    "servings": 4,
+    "description": "Chè đậu đen: tráng miệng tự làm với đậu đen, đường, nước cốt dừa. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Chè bắp lá dứa",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Bắp ngọt", 3, "trái"],
+      ["Lá dứa", 3, "lá"],
+      ["Đường", 80, "g"],
+      ["Bột năng", 30, "g"],
+      ["Nước cốt dừa", 150, "ml"]
+    ],
+    "steps": [
+      "Bào hạt bắp; luộc lõi với lá dứa trong 1 lít nước 15 phút rồi vớt bỏ.",
+      "Cho hạt bắp và đường, nấu 10 phút.",
+      "Hòa bột năng với nước lạnh, rót vào khuấy đến trong, dùng cùng cốt dừa nóng."
+    ],
+    "servings": 4,
+    "description": "Chè bắp lá dứa: tráng miệng tự làm với bắp ngọt, lá dứa, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Chè khoai lang tím",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Khoai lang tím", 400, "g"],
+      ["Nước cốt dừa", 200, "ml"],
+      ["Đường", 70, "g"],
+      ["Bột năng", 20, "g"]
+    ],
+    "steps": [
+      "Gọt khoai, cắt khối và hấp chín.",
+      "Đun 600 ml nước với đường, thêm khoai và cốt dừa.",
+      "Cho bột năng hòa nước lạnh vào khuấy đến sánh, tắt bếp."
+    ],
+    "servings": 4,
+    "description": "Chè khoai lang tím: tráng miệng tự làm với khoai lang tím, nước cốt dừa, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Chè chuối bột báng",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 25,
+    "cook": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Chuối", 5, "quả"],
+      ["Bột báng", 50, "g"],
+      ["Nước cốt dừa", 250, "ml"],
+      ["Đường", 60, "g"],
+      ["Đậu phộng rang", 30, "g"]
+    ],
+    "steps": [
+      "Ngâm bột báng 20 phút, luộc đến trong rồi xả nước.",
+      "Đun cốt dừa với 400 ml nước và đường, thêm chuối cắt khoanh.",
+      "Nấu chuối mềm, cho bột báng, khuấy nóng rồi rắc đậu phộng."
+    ],
+    "servings": 4,
+    "description": "Chè chuối bột báng: tráng miệng tự làm với chuối, bột báng, nước cốt dừa. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Rau câu dừa",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 15,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Bột rau câu", 10, "g"],
+      ["Nước dừa", 800, "ml"],
+      ["Nước cốt dừa", 200, "ml"],
+      ["Đường", 100, "g"]
+    ],
+    "steps": [
+      "Trộn bột rau câu với đường rồi hòa vào nước dừa, ngâm theo bao bì.",
+      "Đun sôi nhẹ, khuấy tan hoàn toàn rồi chia làm hai phần, một phần thêm cốt dừa.",
+      "Đổ xen kẽ từng lớp vừa se mặt, để nguội rồi làm lạnh 3 giờ."
+    ],
+    "servings": 4,
+    "description": "Rau câu dừa: tráng miệng tự làm với bột rau câu, nước dừa, nước cốt dừa. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Rau câu cà phê sữa",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 15,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Bột rau câu", 10, "g"],
+      ["Cà phê pha sẵn", 150, "ml"],
+      ["Sữa đặc", 100, "g"],
+      ["Đường", 70, "g"]
+    ],
+    "steps": [
+      "Trộn rau câu với đường, hòa 850 ml nước và ngâm theo bao bì.",
+      "Đun tan, chia đôi; một phần thêm cà phê, phần còn lại thêm sữa đặc.",
+      "Đổ từng lớp xen kẽ khi lớp trước vừa se, để nguội và làm lạnh."
+    ],
+    "servings": 4,
+    "description": "Rau câu cà phê sữa: tráng miệng tự làm với bột rau câu, cà phê pha sẵn, sữa đặc. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Panna cotta vani",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 10,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Kem tươi", 300, "ml"],
+      ["Sữa tươi", 200, "ml"],
+      ["Gelatin bột", 8, "g"],
+      ["Đường", 60, "g"],
+      ["Vani", 5, "ml"]
+    ],
+    "steps": [
+      "Ngâm gelatin với 40 ml nước lạnh 10 phút.",
+      "Đun kem, sữa và đường đến nóng, tắt bếp rồi hòa gelatin cùng vani.",
+      "Chia cốc, để nguội và giữ lạnh ít nhất 4 giờ."
+    ],
+    "servings": 4,
+    "description": "Panna cotta vani: tráng miệng tự làm với kem tươi, sữa tươi, gelatin bột. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh flan caramel",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 45,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Trứng gà", 4, "quả"],
+      ["Sữa tươi", 500, "ml"],
+      ["Đường", 120, "g"],
+      ["Vani", 5, "ml"]
+    ],
+    "steps": [
+      "Thắng 70 g đường với chút nước thành caramel, chia đáy khuôn.",
+      "Hâm sữa cùng đường còn lại, trộn từ từ vào trứng đánh nhẹ và vani, lọc qua rây.",
+      "Rót khuôn, hấp lửa nhỏ 30–40 phút đến đông, để nguội và làm lạnh."
+    ],
+    "servings": 4,
+    "description": "Bánh flan caramel: tráng miệng tự làm với trứng gà, sữa tươi, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Pudding chocolate",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 15,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Sữa tươi", 500, "ml"],
+      ["Bột cacao", 25, "g"],
+      ["Bột bắp", 35, "g"],
+      ["Đường", 70, "g"],
+      ["Chocolate đen", 60, "g"]
+    ],
+    "steps": [
+      "Trộn cacao, bột bắp, đường với sữa lạnh đến mịn.",
+      "Đun lửa nhỏ và khuấy liên tục đến đặc, cho chocolate vào hòa tan.",
+      "Chia cốc, phủ sát mặt và làm lạnh 3 giờ."
+    ],
+    "servings": 4,
+    "description": "Pudding chocolate: tráng miệng tự làm với sữa tươi, bột cacao, bột bắp. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh chuối nướng",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 45,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Chuối", 5, "quả"],
+      ["Bột mì", 200, "g"],
+      ["Trứng gà", 2, "quả"],
+      ["Sữa tươi", 150, "ml"],
+      ["Đường", 80, "g"],
+      ["Bột nở", 8, "g"]
+    ],
+    "steps": [
+      "Nghiền 4 quả chuối, trộn trứng, sữa và đường.",
+      "Rây bột mì với bột nở vào hỗn hợp, trộn vừa hòa quyện.",
+      "Đổ khuôn, xếp chuối còn lại lên mặt, nướng 175°C khoảng 45 phút đến chín."
+    ],
+    "servings": 4,
+    "description": "Bánh chuối nướng: tráng miệng tự làm với chuối, bột mì, trứng gà. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh quy bơ",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 25,
+    "cook": 15,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Bột mì", 200, "g"],
+      ["Bơ lạt", 120, "g"],
+      ["Đường", 70, "g"],
+      ["Trứng gà", 1, "quả"],
+      ["Vani", 5, "ml"]
+    ],
+    "steps": [
+      "Đánh bơ mềm với đường, thêm trứng và vani.",
+      "Trộn bột mì đến thành khối, giữ lạnh 30 phút rồi tạo hình.",
+      "Nướng 170°C khoảng 12–15 phút đến rìa vàng, để nguội trên giá."
+    ],
+    "servings": 4,
+    "description": "Bánh quy bơ: tráng miệng tự làm với bột mì, bơ lạt, đường. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh muffin việt quất",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 25,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Bột mì", 220, "g"],
+      ["Việt quất", 150, "g"],
+      ["Trứng gà", 2, "quả"],
+      ["Sữa tươi", 150, "ml"],
+      ["Đường", 90, "g"],
+      ["Dầu ăn", 80, "ml"],
+      ["Bột nở", 8, "g"]
+    ],
+    "steps": [
+      "Trộn trứng, sữa, đường và dầu; rây bột mì cùng bột nở riêng.",
+      "Trộn hai phần vừa hòa quyện, nhẹ tay thêm việt quất.",
+      "Chia khuôn hai phần ba đầy, nướng 180°C khoảng 22–25 phút đến chín."
+    ],
+    "servings": 4,
+    "description": "Bánh muffin việt quất: tráng miệng tự làm với bột mì, việt quất, trứng gà. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh brownie cacao",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Chocolate đen", 150, "g"],
+      ["Bơ lạt", 100, "g"],
+      ["Trứng gà", 2, "quả"],
+      ["Đường", 120, "g"],
+      ["Bột mì", 80, "g"],
+      ["Bột cacao", 20, "g"]
+    ],
+    "steps": [
+      "Đun cách thủy chocolate và bơ, để nguội bớt.",
+      "Đánh trứng với đường, thêm chocolate rồi rây bột mì và cacao vào trộn.",
+      "Đổ khuôn lót giấy, nướng 175°C khoảng 25 phút, để nguội trước khi cắt."
+    ],
+    "servings": 4,
+    "description": "Bánh brownie cacao: tráng miệng tự làm với chocolate đen, bơ lạt, trứng gà. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Táo nướng quế",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 30,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Táo", 4, "quả"],
+      ["Bột quế", 3, "g"],
+      ["Mật ong", 40, "g"],
+      ["Bơ lạt", 20, "g"]
+    ],
+    "steps": [
+      "Rửa táo, bỏ lõi và cắt múi.",
+      "Trộn táo với quế, mật ong và bơ chảy.",
+      "Nướng 180°C khoảng 25–30 phút đến mềm, dùng ấm."
+    ],
+    "servings": 4,
+    "description": "Táo nướng quế: tráng miệng tự làm với táo, bột quế, mật ong. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Lê chưng đường phèn",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 40,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Lê", 3, "quả"],
+      ["Đường phèn", 60, "g"],
+      ["Gừng", 10, "g"]
+    ],
+    "steps": [
+      "Rửa lê, bỏ lõi và cắt miếng.",
+      "Cho lê, gừng lát và đường phèn vào bát chịu nhiệt, thêm 300 ml nước.",
+      "Chưng cách thủy 35–40 phút đến lê mềm, để ấm trước khi dùng."
+    ],
+    "servings": 4,
+    "description": "Lê chưng đường phèn: tráng miệng tự làm với lê, đường phèn, gừng. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Sữa chua trái cây hạt chia",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 40,
+    "cook": 0,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Sữa chua không đường", 400, "g"],
+      ["Hạt chia", 25, "g"],
+      ["Xoài chín", 1, "quả"],
+      ["Dâu tây", 150, "g"],
+      ["Mật ong", 30, "g"]
+    ],
+    "steps": [
+      "Trộn chia vào sữa chua cùng mật ong, để lạnh 30 phút cho nở.",
+      "Rửa dâu, gọt xoài và cắt khối.",
+      "Xếp trái cây xen sữa chua vào cốc, giữ lạnh đến khi dùng."
+    ],
+    "servings": 4,
+    "description": "Sữa chua trái cây hạt chia: tráng miệng tự làm với sữa chua không đường, hạt chia, xoài chín. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Kem chuối dừa",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 20,
+    "cook": 5,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Chuối", 6, "quả"],
+      ["Nước cốt dừa", 250, "ml"],
+      ["Sữa đặc", 80, "g"],
+      ["Dừa nạo", 60, "g"],
+      ["Đậu phộng rang", 40, "g"]
+    ],
+    "steps": [
+      "Đun cốt dừa cùng sữa đặc, khuấy đều rồi để nguội.",
+      "Ép dẹt chuối, xếp hộp cùng sốt dừa, dừa nạo và đậu phộng.",
+      "Đậy kín, cấp đông ít nhất 6 giờ rồi cắt miếng."
+    ],
+    "servings": 4,
+    "description": "Kem chuối dừa: tráng miệng tự làm với chuối, nước cốt dừa, sữa đặc. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Kem xoài sữa chua",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 15,
+    "cook": 0,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Xoài chín", 500, "g"],
+      ["Sữa chua không đường", 200, "g"],
+      ["Sữa đặc", 80, "g"]
+    ],
+    "steps": [
+      "Gọt xoài, cắt nhỏ và xay nhuyễn.",
+      "Trộn xoài với sữa chua và sữa đặc.",
+      "Đổ khuôn kem, cấp đông ít nhất 6 giờ trước khi dùng."
+    ],
+    "servings": 4,
+    "description": "Kem xoài sữa chua: tráng miệng tự làm với xoài chín, sữa chua không đường, sữa đặc. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  },
+  {
+    "title": "Bánh trôi nhân đường",
+    "category": "Tráng miệng",
+    "image": "dessert",
+    "prep": 30,
+    "cook": 10,
+    "difficulty": "medium",
+    "ingredients": [
+      ["Bột nếp", 300, "g"],
+      ["Đường phên", 100, "g"],
+      ["Mè rang", 20, "g"]
+    ],
+    "steps": [
+      "Nhào bột nếp với khoảng 220 ml nước ấm, thêm nước từ từ đến bột dẻo.",
+      "Chia viên, bọc kín đường phên cắt nhỏ.",
+      "Luộc đến bánh nổi rồi nấu thêm 2 phút, vớt qua nước mát và rắc mè."
+    ],
+    "servings": 4,
+    "description": "Bánh trôi nhân đường: tráng miệng tự làm với bột nếp, đường phên, mè rang. Thời gian chuẩn bị và nấu chưa bao gồm ngâm, ủ, làm lạnh hoặc cấp đông nếu có."
+  }
+]

@@ -88,7 +88,7 @@ $env:DB_NAME='cookshare_test'
 $env:DB_HOST='127.0.0.1'
 $env:DB_PORT='3306'
 $env:DB_USER='cookshare_test_user'
-$env:DB_PASSWORD='your-test-db-password'
+$env:DB_PASSWORD='<set-your-isolated-test-database-password>'
 $env:JWT_SECRET='your-test-secret-with-at-least-32-characters'
 $env:SEED_ADMIN_PASSWORD='your-test-admin-password'
 $env:RUN_DB_TESTS='1'
@@ -119,6 +119,12 @@ Kết quả đã thực chạy và giới hạn: [verification](docs/verificatio
 Báo cáo kỹ thuật: [PDF 10 trang](docs/CookShare-report.pdf), [nguồn HTML để điền trang bìa](docs/report.html). Điền họ tên/MSSV/lớp trước khi nộp; `node scripts/export-report.mjs` xuất lại PDF.
 
 **Nâng cấp UI/UX:** [thiết kế, ảnh giao diện và kết quả kiểm thử](docs/UI_UX_UPGRADE.md). Bản giao diện mới đạt 6 bài Playwright local, gồm hai bài bổ sung kiểm tra accessibility với axe-core, focus bàn phím và responsive. API và database được giữ nguyên.
+
+**Kho công thức mở rộng:** đã bổ sung 20 món cho từng danh mục, tổng cộng 120 món mới và 141 món trong bộ seed. Sau seed: Bữa sáng 22, Đồ uống 22, Món chay 23, Món chính 28, Salad 24, Tráng miệng 22. Xem [hướng dẫn seed và kiểm tra dữ liệu qua API](database/seeds/README.md).
+
+**Đề 29, kiểm tra 22/10/2026:** [checklist 15 mục, lỗi đã sửa và lệnh Windows](docs/DE29_CHECKLIST.md), [ảnh thật và cách lấy minh chứng](docs/report-evidence/README.md). Backend đạt 28/28 tests; UI native đạt 5 bài, Grafana native chạy riêng đạt 1 bài. Docker pull bị lỗi storage read-only khi ổ C thiếu dung lượng; không xem các kết quả native hoặc CI cũ là Docker PASS hiện tại.
+
+**Docker sau đồng bộ dữ liệu:** :8080 đã có 141 công thức, 17 tài khoản và đủ uploads; dùng `powershell -ExecutionPolicy Bypass -File .\scripts\Start-Synced.ps1` để mở bản đã chuyển. Xem [backup, kiểm thử, cấu hình chạy và rollback](docs/DATA_SYNC.md). phpMyAdmin còn lỗi image snapshot và logging Docker chưa được kiểm chứng thành công; không reset/xóa volume để xử lý.
 
 ## Cấu trúc
 

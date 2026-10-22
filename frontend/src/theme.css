@@ -1,5 +1,56 @@
 @import url("/fonts/fonts.css");
 
+.logout-options {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+.logout-options > button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  border: 1px solid #d5ddcc;
+  border-radius: 12px;
+  padding: 18px;
+  color: #36563c;
+  background: #f7f9f2;
+}
+.logout-options > button:hover {
+  background: #eaf0df;
+  color: #263b2e;
+}
+.logout-options span {
+  display: grid;
+  gap: 5px;
+}
+.logout-options b {
+  font-size: 13px;
+}
+.logout-options small {
+  font-size: 12px;
+  color: #59634f;
+}
+.logout-options svg {
+  flex-shrink: 0;
+}
+.logout-dialog .form-actions {
+  justify-content: flex-end;
+}
+.logout-dialog .auth-icon {
+  margin-top: 8px;
+}
+
+.auth-success {
+  background: #edf4e5;
+  color: #2d4934;
+  border: 1px solid #c8d9ba;
+  border-radius: 10px;
+  padding: 13px 15px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 /* Shared visual system. Business behavior stays in the existing components. */
 :root {
   font-family: Manrope, Arial, sans-serif;

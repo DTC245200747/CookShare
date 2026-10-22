@@ -52,7 +52,7 @@ test("visual system, keyboard dialogs, search and responsive navigation", async 
   await expect(page.getByLabel("Tài khoản", { exact: true })).toBeFocused();
   await page.getByLabel("Bạn muốn nấu món gì?").fill("Salad");
   await page.getByRole("button", { name: "Tìm món ngon", exact: true }).click();
-  await expect(page.locator(".result-count")).toContainText("4 công thức");
+  await expect(page.locator(".result-count")).toContainText("24 công thức");
   await audit();
   for (const width of [360, 390, 600, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });

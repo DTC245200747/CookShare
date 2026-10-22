@@ -1,0 +1,22 @@
+# Recovery plan only. Applying this requires explicit confirmation.
+services:
+  api:
+    image: cookshare-api:preserved-sync-20261022121306_13d09f
+    pull_policy: never
+    environment:
+      DB_NAME: cookshare
+    volumes:
+      - rollback_uploads:/app/backend/uploads
+  migrate:
+    environment:
+      DB_NAME: cookshare
+  seed:
+    environment:
+      DB_NAME: cookshare
+  nginx:
+    image: cookshare-nginx:preserved-sync-20261022121306_13d09f
+    pull_policy: never
+volumes:
+  rollback_uploads:
+    external: true
+    name: cookshare_uploads

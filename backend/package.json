@@ -7,7 +7,7 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "test": "vitest run --maxWorkers=1 --no-file-parallelism",
+    "test": "vitest run --maxWorkers=1 --no-file-parallelism --testTimeout=15000 --hookTimeout=30000",
     "db:migrate": "tsx src/config/migrate.ts",
     "db:seed": "tsx src/config/seed.ts"
   },

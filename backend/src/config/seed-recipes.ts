@@ -2,12 +2,19 @@ import { readFile } from "node:fs/promises";
 import { pool } from "./db.js";
 // JSON is used so compiled Docker runtime does not need TypeScript tooling.
 export async function seedRecipes(author: number) {
-  const data = JSON.parse(
-    await readFile(
-      new URL("../../../database/seeds/recipes.json", import.meta.url),
-      "utf8",
+  const catalogs = await Promise.all(
+    ["recipes.json", "recipes-extra.json"].map(
+      async (file) =>
+        JSON.parse(
+          await readFile(
+            new URL(`../../../database/seeds/${file}`, import.meta.url),
+            "utf8",
+          ),
+        ) as any[],
     ),
-  ) as any[];
+  );
+  const data = catalogs.flat();
+  let inserted = 0;
   const c = await pool.getConnection();
   try {
     await c.beginTransaction();
@@ -29,11 +36,13 @@ export async function seedRecipes(author: number) {
           author_id: author,
           category_id: cat[0].id,
           title: item.title,
-          description: `${item.title} — công thức tại nhà với nguyên liệu dễ tìm. Làm theo từng bước để có bữa ăn thơm ngon cho cả gia đình.`,
+          description:
+            item.description ??
+            `${item.title} — công thức tại nhà với nguyên liệu dễ tìm. Làm theo từng bước để có bữa ăn thơm ngon cho cả gia đình.`,
           image_url: `/images/${item.image}.jpg`,
           prep_minutes: item.prep,
           cook_minutes: item.cook,
-          servings: 4,
+          servings: item.servings ?? 4,
           difficulty: item.difficulty,
         },
       ]);
@@ -58,13 +67,16 @@ export async function seedRecipes(author: number) {
           index + 1,
           step,
         ]);
+      inserted++;
     }
     await c.query(
       "UPDATE recipes SET image_url='/images/tacos.jpg' WHERE author_id=? AND title='Taco bò kiểu Mexico' AND image_url IS NULL",
       [author],
     );
     await c.commit();
-    console.log("20 Vietnamese recipes seeded");
+    console.log(
+      `Recipe seed complete: ${inserted} inserted, ${data.length - inserted} already present`,
+    );
   } catch (e) {
     await c.rollback();
     throw e;
